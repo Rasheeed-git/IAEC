@@ -6,7 +6,7 @@
 		{
 			x.style.left='-400px';
 			y.style.left='50px';
-			z.style.left='150px';
+			z.style.left='110px';
 		}
 		function admin()
 		{

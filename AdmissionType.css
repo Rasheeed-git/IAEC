@@ -30,12 +30,12 @@
 .form-box
 {
     width:400px;
-	height:280px;
+	height:360px;
 	border-top-left-radius: 1em;
 	border-bottom-right-radius: 1em;
 	position:relative;
 	margin:0 auto;
-	background:rgba(0,0,0,0.8);
+	background:rgba(0,0,0,0.85);
 	padding:10px;
     overflow: hidden;
 }
@@ -70,14 +70,14 @@
 }
 .input-group-admin
 {
-	top: 100px;
+	top: 200px;
 	position:absolute;
 	width:280px;
 	transition:.5s;
 }
 .input-group-staff
 {
-    top: 87px;
+    top: 250px;
 	position:absolute;
 	width:280px;
 	transition:.5s;
@@ -122,17 +122,6 @@ a:hover {
 	color: white;
 	text-decoration: none;
   }
-.check-box
-{
-	margin: 25px 10px 34px 0;
-}
-span
-{
-	color:#777;
-	font-size:12px;
-	bottom:75px;
-	position:absolute;
-}
 #admin
 {
 	left:50px;
@@ -155,7 +144,7 @@ span
 {
 	position: relative;
 	width: 18.5em;
-	margin-top: 15px;
+	margin-top: -3.0em;
 }
 .inputBox b 
 {
@@ -167,7 +156,7 @@ span
 	color: white;
 	letter-spacing: 0.05em;
 	transition: 0.5s;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .inputBox input:valid ~ b,
 .inputBox input:focus ~ b 
