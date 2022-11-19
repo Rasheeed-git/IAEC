@@ -5,6 +5,60 @@
     border-top-left-radius: 1em;
 	border-bottom-right-radius: 1em;
 }
+.small-box-footer{
+    font-size: 1.2em;
+}
+#payment-show-password{
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+
+}
+#admission-show-password{
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    
+}
+#matric-show-password{
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    
+}
+#exam-show-password{
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}
+.small-box{
+    padding-top: 20px;
+    color:white;
+}
+#exams{
+    background-color:darkblue;
+}
+#matric-no{
+    background-color:rgb(240, 60, 115);
+}
+#payment{
+    background-color:#f09a3e;
+}
+.control-label{
+    color: wheat;
+}
+.card-header{
+    background-color :wheat;
+    border-bottom:2px solid #f09a3e
+}
 .modal-header{
   
 	background-color: wheat;
@@ -30,5 +84,11 @@
 .form-control {
     background-color: wheat;
     opacity: 0.9;
+}
+.breadcrumb-link{
+    color:#f09a3e
+}
+.footer-link{
+    color:#f09a3e
 }
 

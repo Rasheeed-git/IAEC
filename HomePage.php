@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Images/IEACLogo.jpeg" type="" width="2px" height= "2px">
-    <title>IAEC UNIVERSITY TOGO</title>
+    <link rel="icon" href="Images/iaec-logo.png" type="" width="2px" height= "2px">
+    <title>IAEC University Logo</title>
     <link rel="stylesheet" type="text/css" href="font/css/all.css">
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="HomePage.css">
@@ -80,7 +80,7 @@
 </div>
 <?php
     include("includes/script.php");
-    include("includes/HomePagescript.php");
+    include("includes/Webscript.php");
 ?>
 </body>
 </html>

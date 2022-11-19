@@ -15,6 +15,25 @@
 			z.style.left='0px';
 		}
 	</script>
+
+	<script>
+			var a =document.getElementById('provisional');
+			var b =document.getElementById('perpetual');
+			var c =document.getElementById('btn');
+			function perpetual()
+			{
+				a.style.left='-400px';
+				b.style.left='50px';
+				c.style.left='150px';
+			}
+			function provisional()
+			{
+				a.style.left='50px';
+				b.style.left='450px';
+				c.style.left='0px';
+			}
+	</script>
+
 	<script>
         var modal = document.getElementById('login-form');
         window.onclick = function(event) 

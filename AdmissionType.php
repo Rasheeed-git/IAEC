@@ -4,29 +4,32 @@
     <!--style-->
   <?php include('includes/head.php'); ?>
   <link rel="stylesheet" href="AdmissionType.css">
+  <title>AdmissionType</title>
   <!--style-->
 </head>
 <body class = "full-page">
     <div class = "div-align" >
         <div class="form-box">
         <img src="Images/iaec-university-logo.png" alt="IAEC LOGO">
-            <hr style = "background-color: rgb(240, 60, 115);">
+            <hr class = "horizontal-line">
             <div class='button-box'>
                 <div id='btn'></div>
-                <button type='button'onclick='admin()'class='toggle-btn'><b>Provisional</b></button>
-                <button type='button'onclick='staff()'class='toggle-btn'><b>Perpetual</b></button>
+                <button type='button'onclick='provisional()'class='toggle-btn'><b>Provisional</b></button>
+                <button type='button'onclick='perpetual()'class='toggle-btn'><b>Perpetual</b></button>
             </div>
-            <div id='admin' class='input-group-admin'>
-                <a href = "" class='submit-btn' style = "margin-top:3em"><b>Provisional Admission</b></a>
+            <div id='provisional' class='input-group-provisional'>
+                <a href = "" class='submit-btn' id = "provisional-btn"><b>Provisional Admission</b></a>
+                <a href="StaffPage.php" class = "Dashboard-link"><i class="fa-solid fa-arrow-left"></i> Go to Dashboard</a>
             </div>
 
-            <form id='staff' class='input-group-staff'>
+            <form id='perpetual' class='input-group-perpetual'>
             <div class="inputBox">
                 <input type='text'class='input-field' onfocus="this.value=''" required>
                 <b>Admission Number</b>
                 <i></i>
             </div>
                 <button type='submit'class='submit-btn'><b>Log in</b></button>
+                <a href="StaffPage.php" class = "Dashboard-link"><i class="fa-solid fa-arrow-left"></i> Go to Dashboard</a>
             </form>
         </div>
     </div>
@@ -34,7 +37,7 @@
 
         <?php
     include("includes/script.php");
-    include("includes/AdmissionTypeScript.php");
+    include("includes/Webscript.php");
 ?>
 </body>
 </html>

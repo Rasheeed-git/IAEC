@@ -4,6 +4,8 @@
   <!--style-->
   <?php include('includes/head.php'); ?>
   <link rel="stylesheet" href="StaffPage.css">
+  <!--for the title it will collect the login name-->
+  <title>StaffPage</title>
   <!--style-->
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -27,7 +29,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#"  style = "color:#f09a3e">Home</a></li>
+              <li class="breadcrumb-item"><a href="#" class = "breadcrumb-link">Home</a></li>
               <li class="breadcrumb-item active">Staffs' Dashboard</li>
             </ol>
           </div><!-- /.col -->
@@ -38,7 +40,7 @@
     <div class="row">
       <div class="col-sm-12">
     <div class="card">
-      <div class="card-header" style = "background-color :wheat;border-bottom:2px solid #f09a3e">
+      <div class="card-header">
         <h3>
           Dashboard
         </h3>
@@ -55,14 +57,14 @@
 
           <div class="col-lg-6 col-12">
             <!-- small box -->
-            <div class="small-box bg-success" data-toggle="modal" data-target="#modal-sm1" style="padding-top: 20px">
+            <div class="small-box bg-success" data-toggle="modal" data-target="#modal-sm1">
               <div class="inner">
-               <p>Admission</p>
+               <h4>Admission</h4>
               </div>
               <div class="icon">
               <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-sm1"  ><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+              <a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-sm1"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
             </div>
           </div>
           <!-- ./col -->
@@ -79,17 +81,16 @@
                 <form class="form-horizontal" method="" action="">
 
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Email</label>
+                <label class="col-sm control-label">Email</label>
                 <div class="col-sm">
                     <input type="email" onfocus="this.value=''" class="form-control" name="email" value="" required>
                 </div>
                 </div>
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Password</label>
+                <label class="col-sm control-label">Password</label>
                 <div class="col-sm">
                     <input id="password-field11" onfocus="this.value=''" type="password" class="form-control" name="password1" value="" required>
-                    <span toggle="#password-field11" class="fa fa-fw fa-eye field-icon toggle-password"
-                    style = "float: right;margin-left: -25px;margin-top: -25px;position: relative;z-index: 2;"></span>
+                    <span toggle="#password-field11" id = "admission-show-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -108,9 +109,9 @@
 
           <div class="col-lg-6 col-12">
             <!-- small box -->
-            <div class="small-box" data-toggle="modal" data-target="#modal-sm2" style="padding-top: 20px; background-color:#f09a3e;color:white">
+            <div class="small-box" id = "payment" data-toggle="modal" data-target="#modal-sm2" >
               <div class="inner">
-                <p>Payment</p>
+                <h4>Payment</h4>
               </div>
               <div class="icon">
               <i class="nav-icon fa fa-credit-card"></i>
@@ -132,17 +133,16 @@
             <form class="form-horizontal" method="" action="">
 
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Email</label>
+                <label class="col-sm control-label">Email</label>
                 <div class="col-sm">
                     <input type="email" onfocus="this.value=''" class="form-control" name="email" value="" required>
                 </div>
                 </div>
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Password</label>
+                <label class="col-sm control-label">Password</label>
                 <div class="col-sm">
                     <input id="password-field22" onfocus="this.value=''" type="password" class="form-control" name="password" value="" required>
-                    <span toggle="#password-field22" class="fa fa-fw fa-eye field-icon toggle-password"
-                    style = "float: right;margin-left: -25px;margin-top: -25px;position: relative;z-index: 2;"></span>
+                    <span toggle="#password-field22" id = "payment-show-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -161,9 +161,9 @@
 
           <div class="col-lg-6 col-12">
             <!-- small box -->
-            <div class="small-box " data-toggle="modal" data-target="#modal-sm3" style="padding-top: 20px;color:white;background-color:rgb(240, 60, 115)">
+            <div class="small-box " id = "matric-no" data-toggle="modal" data-target="#modal-sm3" >
               <div class="inner">
-                <p>Matriculation  Number</p>
+                <h4>Matriculation  Number</h4>
               </div>
 
               <div class="icon">
@@ -186,17 +186,16 @@
             <form class="form-horizontal" method="" action="">
 
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Email</label>
+                <label class="col-sm control-label">Email</label>
                 <div class="col-sm">
                     <input type="email" onfocus="this.value=''" class="form-control" name="email" value="" required>
                 </div>
                 </div>
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Password</label>
+                <label class="col-sm control-label">Password</label>
                 <div class="col-sm">
                     <input id="password-field33" onfocus="this.value=''" type="password" class="form-control" name="password" value="" required>
-                    <span toggle="#password-field33" class="fa fa-fw fa-eye field-icon toggle-password"
-                    style = "float: right;margin-left: -25px;margin-top: -25px;position: relative;z-index: 2;"></span>
+                    <span toggle="#password-field33" id = "matric-show-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -216,9 +215,9 @@
 
           <div class="col-lg-6 col-12">
             <!-- small box -->
-            <div class="small-box" data-toggle="modal" data-target="#modal-sm4" style="padding-top: 20px;background-color:darkblue;color:white">
+            <div class="small-box" id = "exams" data-toggle="modal" data-target="#modal-sm4" >
               <div class="inner">
-             <p>Examination</p>
+             <h4>Examination</h4>
               </div>
               <div class="icon">
               <i class="fa-solid fa-computer"></i>
@@ -243,17 +242,16 @@
             <form class="form-horizontal" method="" action="">
 
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Email</label>
+                <label class="col-sm control-label">Email</label>
                 <div class="col-sm">
                     <input type="email" onfocus="this.value=''" class="form-control" name="email" value="" required>
                 </div>
                 </div>
                 <div class="form-group">
-                <label class="col-sm control-label" style = "color: wheat">Password</label>
+                <label class="col-sm control-label">Password</label>
                 <div class="col-sm">
                     <input id="password-field44" onfocus="this.value=''" type="password" class="form-control" name="password" value="" required>
-                    <span toggle="#password-field44" class="fa fa-fw fa-eye field-icon toggle-password"
-                    style = "float: right;margin-left: -25px;margin-top: -25px;position: relative;z-index: 2;"></span>
+                    <span toggle="#password-field44" id = "exam-show-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -280,14 +278,14 @@
   </div>
 
   <footer class="main-footer">
-    <strong>© IAEC University Togo |  All rights reserved 2023 | Design & Developed By <a href="#" style = "color:#f09a3e">HR_Rashid Tech</a>.</strong>
+    <strong>© IAEC University Togo |  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link" style = "">HR_Rashid Tech.</a></strong>
   </footer>
 </div>
 <!--JQuery-->
 
 <?php 
   include('includes/script.php');
-  include("includes/HomePagescript.php");
+  include("includes/Webscript.php");
 ?>
  <!--JQuery-->
 </body>
