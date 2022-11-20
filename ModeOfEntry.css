@@ -40,7 +40,18 @@
 	background-color: rgb(240, 60, 115);
 	height: 1px;
 }
-
+.dropdown-menu{
+	background-color: antiquewhite;
+	color: white;
+	height: auto;
+    max-height:7em;
+    overflow-x: hidden;
+	
+}
+.dropdown-item:hover{
+	background-color: rgb(240, 60, 115);
+	color:white;
+}
 .submit-btn
 {
 	width: 14em;

@@ -1,4 +1,5 @@
-<script>
+	<!--HomePage Login Script-->
+	<script>
         var x=document.getElementById('admin');
 		var y=document.getElementById('staff');
 		var z=document.getElementById('btn');
@@ -15,7 +16,9 @@
 			z.style.left='0px';
 		}
 	</script>
+	<!--/HomePage Login Script-->
 
+	<!--AdmissionType Script-->
 	<script>
 			var a =document.getElementById('provisional');
 			var b =document.getElementById('perpetual');
@@ -33,7 +36,9 @@
 				c.style.left='0px';
 			}
 	</script>
+	<!--/AdmissionType Script-->
 
+	<!--Show Modal Script-->
 	<script>
         var modal = document.getElementById('login-form');
         window.onclick = function(event) 
@@ -44,6 +49,9 @@
             }
         }
     </script>
+	<!--/Show Modal Script-->
+
+	<!--Show and Hide Password Script-->
 	<script>
 		$(".toggle-password").click(function() {
 
@@ -56,4 +64,15 @@
 		}
 		});
 	</script>
+	<!--/Show and Hide Password Script-->
+	
+	<!--Select Script for Mode of Entry-->
+	<script>
+
+		function handleChange (el) {
+			document.querySelector('.center-select__text').innerHTML = el.value
+		}
+
+	</script>
+	<!--/Select Script for Mode of Entry-->
 	
