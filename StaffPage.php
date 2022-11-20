@@ -14,11 +14,12 @@
   include('includes/topbar.php');
 ?>
 
+<div class="content-wrapper">
+
+
 <?php 
   include('includes/sidebar.php');
 ?>
-
-<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">

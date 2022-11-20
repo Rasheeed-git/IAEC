@@ -30,9 +30,8 @@
 .form-box
 {
     width:400px;
-	height:380px;
-	border-top-left-radius: 1em;
-	border-bottom-right-radius: 1em;
+	height:380px;	
+	border-radius: 1em;
 	position:relative;
 	margin:0 auto;
 	background:rgba(0,0,0,0.85);
