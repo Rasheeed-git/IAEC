@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #000000, #d43f8d);
+}
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.container{
+  width: 800px;
+  background-color:rgba(255,255,255,0.7);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 20px 10px 20px;
+}
+.container header{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 0px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .field{
+  width: 200px;
+  height: 45px;
+  margin: 20px 20px;
+  display: inline-block;
+  position: relative;
+}
+.form-outer form .page .field-1{
+  width: 700px;
+  height: 45px;
+  margin: 25px 55px;
+  display: block;
+  position: relative;
+}
+.form-outer form .page .field-2{
+  width: 335px;
+  height: 45px;
+  margin: 45px 60px;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -25px;
+  font-weight: 500;
+}
+form .page .field-1 .label-1{
+  position: absolute;
+  top: -25px;
+  font-weight: 500;
+}
+form .page .field-2 .label-2{
+  position: absolute;
+  top: -50px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field-1 select{
+  width: 710px;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.form-outer form .page .field-next{
+  width: 200px;
+  height: 45px;
+  margin: 50px 20px 20px;
+  display: block;
+  position: relative;
+}
+.Dashboard-link{
+	color: rgb(240,60,115);
+}
+
+form .page .field-next button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  margin-left: 15em;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field-next button:hover{
+  background: #000;
+}
+
+form .page .btns button.prev-1{
+  margin-left:-15em;
+  margin-top: 0.7em;
+  font-size: 17px;
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .btns button.next-1{
+  margin-right: -15em;
+  font-size: 17px;
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  
+}
+form .page .btns button.prev-2{
+  margin-left: -15em;
+  margin-top: 10em;
+  font-size: 17px;
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  
+}
+form .page .btns input.submit{
+  margin-right:-15em;
+  font-size: 17px;
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  
+}
+.star{
+  color:red;
+}
+form .page .btns button:hover{
+  background: #000;
+}
+form .page .btns input:hover{
+  background: #000;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 15px;
+  margin-left: 35px;
+}
+.center{
+  text-align: center;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 40px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -225px;
+  height: 3px;
+  width: 225px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
