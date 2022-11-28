@@ -8,7 +8,7 @@
     <title>IAEC University Logo</title>
     <link rel="stylesheet" type="text/css" href="font/css/all.css">
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="css/HomePage.css">
 </head>
 <body>
  <!-- navbar-->

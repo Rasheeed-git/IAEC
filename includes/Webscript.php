@@ -111,6 +111,15 @@
 			progressText[current - 2].classList.remove("active");
 			current -= 1;
 			});
+			submitBtn.addEventListener("click", function(){
+			bullet[current - 1].classList.add("active");
+			progressCheck[current - 1].classList.add("active");
+			progressText[current - 1].classList.add("active");
+			current += 1;
+			setTimeout(function(){
+				alert("Your Form Successfully Signed up");
+			},300);
+			});
 			
 
 	</script>
@@ -175,6 +184,69 @@
         div.style.display = 'None';
     }
 }
-</script>
+	</script>
+	<!-- Payment Select script-->
+    <script type="text/javascript">
+        function filter(element) {
+            var value = $(element).val().toLowerCase();
+            var text;
+            var searchValue;
+            var liValue;
 
-	
+            $("#therealitems > li").each(function() {
+                if ($(this).text().toLowerCase().search(value) > -1) {
+                    $(this).show();
+                    var text = $(this).show();
+                    if (text.length === 1) {
+                        searchValue = text[0];
+                    }
+                } else {
+                    $(this).hide();
+                }
+
+            });
+
+            $('.input-field1').on('keypress', function(e) {
+                if (e.key === 'Enter' || e.keyCode === 13) {
+                    $('.input-field1').val(searchValue.innerText);
+                    e.preventDefault();
+                    $('.the-dropdown-list').slideUp('fast');
+                }
+            });
+
+        }
+        $(document).ready(function() {
+
+            $('.input-field1').on('click', function() {
+                $(this).parent().next().slideDown('fast');
+            });
+
+            $('.the-select-btn').on('click', function() {
+                $('.the-dropdown-list').slideUp('fast');
+
+                if (!$(this).prev().attr('disabled')) {
+                    $(this).prev().trigger('click');
+                }
+            });
+
+            $('.input-field1').width($('.inputBox1').width() - $('.the-select-btn').width() - 13);
+
+            $('.the-dropdown-list').width($('.inputBox1').width());
+
+            $('.input-field1').val('');
+
+            $('li.the-dropdown-item').on('click', function() {
+                var text = $(this).html();
+                $(this).parent().prev().find('.input-field1').val(text);
+                $('.the-dropdown-list').slideUp('fast');
+            });
+
+            $(document).on('click', function(event) {
+                if ($(event.target).closest(".input-field1, .the-select-btn").length)
+                    return;
+                $('.the-dropdown-list').slideUp('fast');
+                event.stopPropagation();
+            });
+
+        });
+    </script>

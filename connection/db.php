@@ -1,15 +1,15 @@
 <?php 
-// DB credentials.
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','aims_fees');
-// Establish database connection.
-try
-{
-$dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER, DB_PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
-}
-catch (PDOException $e)
-{
-exit("Error: " . $e->getMessage());
-}
+ $username = 'root';
+ $password = '';
+ $host='localhost';
+ $database='IAEC';
+
+ $dsn="mysql:host=$host;dbname=$database;";
+
+
+ try {
+    $pdo = new PDO($dsn, $username, $password);
+    echo '<h1>Connection successful.</h1>';
+ } catch(PDOException $e) {
+    throw new PDOException($e->getMessage(), (int)$e->getCode());
+ }

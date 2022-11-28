@@ -1,0 +1,284 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #000000, #d43f8d);
+}
+.div-align{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+.form-box
+{
+    width:400px;
+	height:300px;
+    border-radius: 1.5em;
+	position:relative;
+	margin:0 auto;
+	background:rgba(0,0,0,0.85);
+	padding:10px;
+    overflow: hidden;
+    
+}
+.form-box1
+{
+    width:340px;
+	height:200px;
+    border-radius: 1.5em;
+	position:relative;
+	margin:5em auto 0em;
+	background:rgba(0,0,0,1);
+	padding:20px;
+    overflow: hidden;
+    border: 2px solid rgb(240, 60, 115);;
+
+}
+.form-box2
+{
+    width:400px;
+	height:200px;
+    border-radius: 1.5em;
+	position:relative;
+	margin:5em auto 0em;
+	background:rgba(0,0,0,1);
+	padding:20px;
+    overflow: hidden;
+    border: 2px solid rgb(240, 60, 115);;
+
+}
+
+
+.header{
+    color: rgb(240, 60, 115);
+    font-weight: bold;
+
+}
+.horizontal-line{
+	background-color: rgb(240, 60, 115);
+	height: 1px;
+}
+.submit-btn
+{
+	width: 17em;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin:1em auto;
+	color: white;
+	background: rgb(240, 60, 115);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.submit-btn2
+{
+	width: 22em;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin:1em auto;
+	color: white;
+	background: rgb(240, 60, 115);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+  }
+.Dashboard-link{
+	color: rgb(240,60,115);
+	text-decoration: none;
+}
+.Dashboard-link1{
+	color: rgb(240,60,115);
+    margin-left: 7em;
+	text-decoration: none;
+}
+.Dashboard-link2{
+	color: rgb(240,60,115);
+    margin-left: 9em;
+	text-decoration: none;
+}
+.input-group-perpetual
+{
+    top: 70px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.inputBox 
+{
+	position: relative;
+	width: 18.5em;
+	margin-top: -3.0em;
+}
+.inputBox1
+{
+	position: relative;
+	width: 22em;
+	margin-top: -3.0em;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+.input-field1
+{
+	width: 22em;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+	position: relative;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: white;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index: 10;
+}
+.input-field
+{
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+	box-sizing: border-box;
+	width: 18.5em;
+	color: white;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+	position: relative;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: white;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index: 10;
+}
+.inputBox b 
+{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: white;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+.inputBox1 b 
+{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: white;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+.inputBox input:valid ~ b,
+.inputBox input:focus ~ b 
+{
+	color: rgb(240, 60, 115);
+	transform: translateX(0px) translateY(-40px);
+	font-size: 0.75em;
+}
+.inputBox1 input:valid ~ b,
+.inputBox1 input:focus ~ b 
+{
+	color: rgb(240, 60, 115);
+	transform: translateX(0px) translateY(-40px);
+	font-size: 0.75em;
+}
+.inputBox i 
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 18.5em;
+	height: 2px;
+	background: rgb(240,60,115);
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+.inputBox1 i 
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 22em;
+	height: 2px;
+	background: rgb(240,60,115);
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i 
+{
+	height: 45px;
+}
+.inputBox1 input:valid ~ i,
+.inputBox1 input:focus ~ i 
+{
+	height: 45px;
+}
+/*Second Styling*/
+.the-dropdown-list {
+	display: none;
+	background-color: whitesmoke;
+	border: 2px solid black;
+	z-index: 10;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height:45px;
+	overflow: auto;
+	position: absolute;
+	border-radius:0.5em;
+}
+.the-dropdown-item {
+	padding: 5px 20px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.the-dropdown-item:hover {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}

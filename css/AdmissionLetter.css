@@ -1,0 +1,22 @@
+.logo{
+    width: 7em;
+    height:10em;
+}
+.line1{
+    border-left: 0.8em solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    Margin-top: 0.5em;
+}
+.line2{
+    border-left: 0.8em solid red;
+    height: 500px;
+    position: absolute;
+    left: 85%;
+    Margin-top: 0.5em;
+}
+p{
+    float: left;
+    text-align: left;
+}
