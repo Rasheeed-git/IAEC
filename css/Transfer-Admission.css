@@ -48,7 +48,7 @@ body{
 .form-outer form .page .field{
   width: 200px;
   height: 45px;
-  margin: 25px 20px;
+  margin: 20px 20px;
   display: inline-block;
   position: relative;
 }
@@ -75,7 +75,7 @@ body{
 }
 form .page .field .label{
   position: absolute;
-  top: -30px;
+  top: -20px;
   font-weight: 500;
 }
 form .page .field-1 .label-1{

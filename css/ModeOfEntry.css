@@ -1,32 +1,10 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.full-page
-{
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  overflow: hidden;
-  background: url("bg.png"), -webkit-linear-gradient(bottom, #000000, #d43f8d);
-}
-.div-align{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	min-height: 100vh;
-}
 .form-box
 {
-    width:350px;
-	height:300px;
+    width:450px;
+	height:350px;
     border-radius: 1.5em;
 	position:relative;
-	margin:0 auto;
+	margin:2em auto;
 	background:rgba(0,0,0,0.85);
 	padding:10px;
     overflow: hidden;
@@ -43,6 +21,7 @@
 .dropdown-menu{
 	background-color: antiquewhite;
 	color: white;
+	width: 20em;
 	height: auto;
     max-height:7em;
     overflow-x: hidden;
@@ -54,11 +33,12 @@
 }
 .submit-btn
 {
-	width: 14em;
+	width: 20em;
 	padding: 10px 30px;
 	cursor: pointer;
 	display: block;
-	margin:1em auto;
+	height: 3em;
+	margin:2em auto;
 	color: white;
 	background: rgb(240, 60, 115);
 	border: 0;
@@ -69,6 +49,24 @@ a:hover {
 	color: white;
 	text-decoration: none;
   }
-.Dashboard-link{
-	color: rgb(240,60,115);
+  .main-sidebar{
+    background-color:rgba(0,0,0,0.85);
+}
+.logo{
+    width: 1em;
+}
+.breadcrumb-link:hover{
+    color:rgb(240, 60, 115);
+}
+.footer-link:hover{
+    color:rgb(240, 60, 115);
+}
+.card-header{
+    background-color :rgba(0,0,0,0.85);
+    color: white;
+}
+.image img{
+	width: 3.5em;
+	height: 4em;
+	border-radius: 40%;
 }

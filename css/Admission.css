@@ -1,39 +1,17 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.full-page
-{
-    height: 80%;
-	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(css/Images/IMG1.jpg);
-	background-position: center;
-	background-size: cover;
-	position: absolute;
-}
-.div-align{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	min-height: 100vh;
-}
 .header-box
 {
 	width:400px;
-	margin:35px auto;
+	margin:0px auto;
 	box-shadow: 0 0 20px 9px wheat;
 	border-radius: 30px;
 }
 .form-box
 {
-    width:400px;
-	height:380px;	
+    width:450px;
+	height:350px;	
 	border-radius: 1em;
 	position:relative;
-	margin:0 auto;
+	margin:2em auto;
 	background:rgba(0,0,0,0.85);
 	padding:10px;
     overflow: hidden;
@@ -43,7 +21,17 @@
 	height: 1px;
 }
 #provisional-btn{
-	margin-top:3em
+    width: 14em;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin:3em 0em 0em 4em;
+	color: white;
+	background: rgb(240, 60, 115);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    
 }
 .button-box
 {
@@ -85,12 +73,12 @@
 {
     top: 250px;
 	position:absolute;
-	width:280px;
+	width:350px;
 	transition:.5s;
 }
 .input-field
 {
-	width: 18.5em;
+	width: 22em;
 	padding:10px 0;
 	margin:5px 0;
 	border-left:0;
@@ -117,12 +105,29 @@
 	padding: 10px 30px;
 	cursor: pointer;
 	display: block;
-	margin:1em 2em;
+	margin:1em auto;
 	color: white;
 	background: rgb(240, 60, 115);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
+}
+.main-sidebar{
+    background-color:rgba(0,0,0,0.85);
+}
+.logo{
+    width: 1em;
+}
+.breadcrumb-link{
+    color:rgb(240, 60, 115);
+}
+.footer-link{
+    color:rgb(240, 60, 115);
+}
+.image img{
+	width: 3.5em;
+	height: 4em;
+	border-radius: 40%;
 }
 a:hover {
 	color: white;
@@ -149,7 +154,7 @@ a:hover {
 .inputBox 
 {
 	position: relative;
-	width: 18.5em;
+	width: 22em;
 	margin-top: -3.0em;
 }
 .inputBox b 
@@ -169,7 +174,7 @@ a:hover {
 {
 	color: rgb(240, 60, 115);
 	transform: translateX(0px) translateY(-40px);
-	font-size: 0.75em;
+	font-size: 0.90em;
 }
 .field-icon {
 	float: right;
@@ -187,7 +192,7 @@ a:hover {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 18.5em;
+	width: 22em;
 	height: 2px;
 	background: rgb(240,60,115);
 	border-radius: 4px;
@@ -200,7 +205,4 @@ a:hover {
 .inputBox input:focus ~ i 
 {
 	height: 45px;
-}
-.Dashboard-link{
-	color: rgb(240,60,115);
 }

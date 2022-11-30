@@ -161,9 +161,9 @@
                             <input type="file" id="myfile" name="myfile">
                         </div>
                         
-                        <div class="field btns">
-                            <button class="prev-1 prev">Previous</button>
-                            <button class="next-1 next">Next</button>
+                        <div class="field btns text-center">
+                            <button class="prev-1 prev w-100">Previous</button>
+                            <button class="next-1 next w-100">Next</button>
                         </div>
                     </div>
                     <div class="page">

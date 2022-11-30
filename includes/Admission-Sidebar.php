@@ -1,19 +1,20 @@
-<aside class="main-sidebar sidebar-light-primary elevation-4" style = "background-color :wheat;border-right: 2px solid #f09a3e">
+<aside class="main-sidebar sidebar-dark-primary elevation-10" style = "background-color:rgba(0,0,0,0.85);">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link" style = "border-bottom: 2px solid #f09a3e">
-      <img src="./Images/iaec-university-logo.png" alt="IEAC-Logo" style="width:10em;">
+    <a href="#" class="brand-link">
+      <img src="./Images/iaec-logo.png" alt="IEAC-Logo" style="width:1em;">
+      <span>IAEC University Togo</span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar" >
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 d-flex"  style = "border-bottom:2px solid #f09a3e">
+      <div class="user-panel mt-2 pb-1 d-flex">
         <div class="image">
-          <img src="./Images/Mensah.jpg" class="img elevation-5" alt="User-Image"
+          <img src="./Images/Mensah.jpg" class="img elevation-1" alt="User-Image"
            style="width: 50px;height: 50px;border-radius: 40%;">
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
-          <span color="green"> * Online</span>
+          <a href="#" class="d-block"> * online</a>
         </div>
       </div>
 
@@ -22,8 +23,17 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+               <li class="nav-item">
+            <a href="Admission-Dashboard.php" class="nav-link" >
+            <i class="fa-solid fa-gauge"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item">
-            <a href="dashboard.php" class="nav-link" data-toggle="modal" data-target="#modal-sm1">
+            <a href="Admission.php" class="nav-link">
               <i class="fa-solid fa-graduation-cap"></i>
               <p>
                 Admission
