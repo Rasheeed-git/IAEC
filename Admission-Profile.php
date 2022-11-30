@@ -3,7 +3,7 @@
 <head>
   <!--style-->
   <?php include('includes/head.php'); ?>
-  <link rel="stylesheet" href="css/Admission-Profile.css">
+  <link rel="stylesheet" href="css/Admission.css">
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="Manage-Profile.php" class="nav-link">
+            <a href="Manage-Admission-Profile.php" class="nav-link">
             <i class="fa-solid fa-gear"></i>
               <p>
                 Manage Profile

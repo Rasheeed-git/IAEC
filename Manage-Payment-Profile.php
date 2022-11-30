@@ -3,7 +3,7 @@
 <head>
   <!--style-->
   <?php include('includes/head.php'); ?>
-  <link rel="stylesheet" href="css/Manage-Profile.css">
+  <link rel="stylesheet" href="css/Payment.css">
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
@@ -41,7 +41,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="Admission-Dashboard.php" class="nav-link" >
+            <a href="Payment-Dashboard.php" class="nav-link" >
             <i class="fa-solid fa-gauge"></i>
               <p>
                 Dashboard
@@ -50,7 +50,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="Admission.php" class="nav-link">
+            <a href="Payment.php" class="nav-link">
               <i class="fa-solid fa-graduation-cap"></i>
               <p>
                 Admission
@@ -60,7 +60,7 @@
           
           
           <li class="nav-item">
-            <a href="Admission-Profile.php" class="nav-link">
+            <a href="Payment-Profile.php" class="nav-link">
             <i class="fa-solid fa-user"></i>
               <p>
                 Profile
@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="Manage-Profile.php" class="nav-link active bg-light">
+            <a href="Manage-Payment-Profile.php" class="nav-link active bg-light">
             <i class="fa-solid fa-gear"></i>
               <p>
                 Manage Profile

@@ -70,12 +70,34 @@
 .footer-link{
     color:rgb(240, 60, 115);
 }
+.breadcrumb-link:hover{
+    color:rgb(240, 60, 115);
+}
+.footer-link:hover{
+    color:rgb(240, 60, 115);
+}
 .image img{
 	width: 3.5em;
 	height: 4em;
 	border-radius: 40%;
 }
-
+.div-alignn{
+    margin-left:0.5em;
+}
+input[type="button"]{
+    width: 100%;
+    background-color:rgb(240,60,115);
+    margin-left: 0.5em;
+}
+#divPhoto{
+    margin-left: 0.6em;
+}
+#divTable{
+    margin-left: -0.6em;
+}
+#my_profile{
+    width: 100%;
+}
 .header{
     color: rgb(240, 60, 115);
     font-weight: bold;
@@ -121,12 +143,12 @@ a:hover {
 }
 .Dashboard-link1{
 	color: rgb(240,60,115);
-    margin-left: 6.5em;
+    margin-left: 7.5em;
 	text-decoration: none;
 }
 .Dashboard-link2{
 	color: rgb(240,60,115);
-    margin-left: 9em;
+    margin-left: 9.5em;
 	text-decoration: none;
 }
 .input-group-perpetual

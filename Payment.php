@@ -60,7 +60,7 @@
           
           
           <li class="nav-item">
-            <a href="set_fees.php" class="nav-link" data-toggle="modal">
+            <a href="Payment-Profile.php" class="nav-link">
             <i class="fa-solid fa-user"></i>
               <p>
                 Profile
@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="payment_form.php" class="nav-link" data-toggle="modal">
+            <a href="Manage-Payment-Profile.php" class="nav-link">
             <i class="fa-solid fa-gear"></i>
               <p>
                 Manage Profile
@@ -111,9 +111,9 @@
             <h3 class = "header w-100">Payment</h3>
             <hr class = "horizontal-line">
             <div id='provisional' class='input-group-provisional'>
-                <a href = "" class='submit-btn' data-toggle="modal" data-target="#modal-sm1"><b>Fresh Student</b></a>
-                <a href = "" class='submit-btn' data-toggle="modal" data-target="#modal-sm2"><b>Returning Student</b></a>
-                <a href = "" class='submit-btn' data-toggle="modal" data-target="#modal-sm3"><b>Carryover/Spillover Student</b></a>
+                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm1"><b>Fresh Student</b></a>
+                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm2"><b>Returning Student</b></a>
+                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm3"><b>Carryover/Spillover Student</b></a>
             </div>
         </div>
     </div>
@@ -122,7 +122,7 @@
     <!--Modal 1-->
     <div class="modal fade" id="modal-sm1" style="display: none;" aria-hidden="true">
     <div class="form-box2">
-        <form id='perpetual' class='input-group-perpetual' action = "index.php" method= "POST">
+        <form id='perpetual' class='input-group-perpetual'>
         <div class="inputBox1">
                 <input type='text'class='input-field1' id="Name" name = "Name" onkeyup="filter(this)" autocomplete="off" onfocus="this.value=''" required>
                 <b>Name</b>
@@ -143,7 +143,7 @@
                         <li class="the-dropdown-item">Rust</li>
             </ul>
             <button type='submit' name ="submit" class='submit-btn2'><b>Log in</b></button>
-            <a href="" class = "Dashboard-link2"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+            <a href="" class = "Dashboard-link2"><i class="fa-solid fa-xmark"></i> Close</a>
         </form>
     </div>
     </div>
@@ -158,7 +158,7 @@
                 <i></i>
             </div>
                 <button type='submit'class='submit-btn' name = "submit"><b>Log in</b></button>
-                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-xmark"></i> Close</a>
             </form>
     </div>
     </div>
@@ -173,7 +173,7 @@
                 <i></i>
             </div>
                 <button type='submit'class='submit-btn' name = "submit"><b>Log in</b></button>
-                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-xmark"></i> Close</a>
             </form>
     </div>
     </div>

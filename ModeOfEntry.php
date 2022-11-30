@@ -60,7 +60,7 @@
           
           
           <li class="nav-item">
-            <a href="set_fees.php" class="nav-link" data-toggle="modal" data-target="#modal-sm2">
+            <a href="Admission-Profile.php" class="nav-link" data-toggle="modal" data-target="#modal-sm2">
             <i class="fa-solid fa-user"></i>
               <p>
                 Profile
@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="payment_form.php" class="nav-link" data-toggle="modal" data-target="#modal-sm3">
+            <a href="Manages-Admission-Profile.php" class="nav-link" data-toggle="modal" data-target="#modal-sm3">
             <i class="fa-solid fa-gear"></i>
               <p>
                 Manage Profile

@@ -55,6 +55,12 @@ a:hover {
 .logo{
     width: 1em;
 }
+.breadcrumb-link{
+    color:rgb(240, 60, 115);
+}
+.footer-link{
+    color:rgb(240, 60, 115);
+}
 .breadcrumb-link:hover{
     color:rgb(240, 60, 115);
 }
