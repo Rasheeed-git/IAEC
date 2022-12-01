@@ -1,0 +1,39 @@
+.main-sidebar{
+    background-color:rgba(0,0,0,0.85);
+}
+.logo{
+    width: 1em;
+}
+.breadcrumb-link{
+    color:rgb(240, 60, 115);
+}
+.footer-link{
+    color:rgb(240, 60, 115);
+}
+.card-header{
+    background-color :rgba(0,0,0,0.85);
+    color: white;
+}
+.image img{
+	width: 3.5em;
+	height: 4em;
+	border-radius: 40%;
+}
+input[type="text"]{
+    width: 100%;
+    background-color: whitesmoke;
+}
+input[type="button"]{
+    width: 100%;
+    background-color:rgb(240,60,115);
+    margin-left: 0.5em;
+}
+#divPhoto{
+    margin-left: 0.6em;
+}
+#divTable{
+    margin-left: -0.6em;
+}
+#my_profile{
+    width: 100%;
+}

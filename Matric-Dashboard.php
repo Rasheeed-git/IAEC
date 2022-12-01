@@ -3,7 +3,7 @@
 <head>
   <!--style-->
   <?php include('includes/head.php'); ?>
-  <link rel="stylesheet" href="css/ModeOfEntry.css">
+  <link rel="stylesheet" href="css/MatricNumber.css">
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
@@ -27,7 +27,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-2 pb-1 d-flex">
         <div class="image">
-          <img src="./Images/Mensah.jpg" class="img elevation-1" alt="User-Image">
+          <img src="./Images/Mensah.jpg" class="profile-user-img img-fluid img-circle" alt="User-Image">
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
@@ -41,7 +41,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="Admission-Dashboard.php" class="nav-link" >
+            <a href="Matric-Dashboard.php" class="nav-link active bg-light" >
             <i class="fa-solid fa-gauge"></i>
               <p>
                 Dashboard
@@ -50,17 +50,17 @@
           </li>
 
           <li class="nav-item">
-            <a href="Admission.php" class="nav-link active bg-light">
+            <a href="MatricNumber.php" class="nav-link">
               <i class="fa-solid fa-graduation-cap"></i>
               <p>
-                Admission
+                Matric Number
               </p>
             </a>
           </li>
           
           
           <li class="nav-item">
-            <a href="Admission-Profile.php" class="nav-link" >
+            <a href="Matric-Profile.php" class="nav-link">
             <i class="fa-solid fa-user"></i>
               <p>
                 Profile
@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="Manages-Admission-Profile.php" class="nav-link">
+            <a href="Manage-Matric-Profile.php" class="nav-link">
             <i class="fa-solid fa-gear"></i>
               <p>
                 Manage Profile
@@ -86,7 +86,7 @@
   </aside>
  
 <!--/SideBar-->
-
+ 
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -97,9 +97,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="Admission-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
-              <li class="breadcrumb-item"><a href="Admission.php" class = "breadcrumb-link">Admission-Type</a></li>
-              <li class="breadcrumb-item active">Mode-of-Entry</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -118,43 +116,17 @@
         </div>
     </div>
     
-    <div class="form-box text-center">
-        <div class="w-100">
-        <h3 class = "header">Mode Of Entry</h3>
-            <hr class = "horizontal-line">
-            <div id='provisional' class='input-group-provisional'>
-                <a href = "Fresh-Admission.php" class='submit-btn'><b>Fresh</b></a>
-             <!-- <a href = "" class='submit-btn'><b>Direct Entry</b></a>-->
-                <div class="dropdown">
-                    <button type="button" class="submit-btn dropdown-toggle" data-toggle="dropdown">
-                       <b>Direct Entry</b>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ND-Admission.php">OND/ND</a></li>
-                        <li><a class="dropdown-item" href="NCE-Admission.php">NCE</a></li>
-                        <li><a class="dropdown-item" href="Advance-Admission.php">Advance OND/ND</a></li>
-                        <li><a class="dropdown-item" href="HND-Admission.php">HND</a></li>
-                        <li><a class="dropdown-item" href="B.Sc-Admission.php">B.Sc</a></li>
-                    </ul>
-                </div>
-                <a href = "Transfer-Admission.php" class='submit-btn'><b>Transfer</b></a>
-            </div>
-        </div>
-           
-    </div>
-
-
 </div>
     <footer class="main-footer">
-        <strong>© <a href = "https://iaec-university.tg" class = "footer-link">IAEC University Togo</a> |  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link" style = "">HR_Rashid Tech.</a></strong>
+        <strong>© <a href = "https://iaec-university.tg" class = "footer-link">IAEC University Togo</a> |  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link">HR_Rashid Tech.</a></strong>
     </footer>
 </div>
-<!--JQuery-->
 
+<!--Script-->
 <?php 
   include('includes/script.php');
   include("includes/Webscript.php");
 ?>
- <!--JQuery-->
+ <!--/Script-->
 </body>
 </html>

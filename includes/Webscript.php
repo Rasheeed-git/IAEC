@@ -65,8 +65,13 @@
 		});
 	</script>
 	<!--/Show and Hide Password Script-->
-	
-	<script>
+    <!--
+
+    
+
+    -->
+
+    <script>
 		const slidePage = document.querySelector(".slide-page");
 			const nextBtnFirst = document.querySelector(".firstNext");
 			const prevBtnSec = document.querySelector(".prev-1");
@@ -111,18 +116,17 @@
 			progressText[current - 2].classList.remove("active");
 			current -= 1;
 			});
+            
 			submitBtn.addEventListener("click", function(){
 			bullet[current - 1].classList.add("active");
 			progressCheck[current - 1].classList.add("active");
 			progressText[current - 1].classList.add("active");
 			current += 1;
-			setTimeout(function(){
-				alert("Your Form Successfully Signed up");
-			},300);
 			});
 			
 
 	</script>
+    
 
 	<!--Display Department script-->
 	<script>

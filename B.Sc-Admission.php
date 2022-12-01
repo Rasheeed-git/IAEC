@@ -154,7 +154,7 @@
                             <input type="file" id="myfile" name="myfile" required>
                         </div>
                         
-                        <div class="field btns">
+                        <div class="field btns" style="margin-top:8.5em">
                             <button class="prev-1 prev">Previous</button>
                             <button class="next-1 next">Next</button>
                         </div>
@@ -165,7 +165,7 @@
                             Make Sure all the Information tally with the uploaded documents <br />
                             to avoid admission rejection and consequences.</p>
                         </div>
-                        <div class="field btns">
+                        <div class="field btns" style="margin-top:8.5em">
                             <button class="prev-2 prev">Previous</button>
                             <input type="submit" class = "submit" name = "" Value = "Submit">
                         </div>
