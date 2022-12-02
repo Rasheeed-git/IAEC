@@ -23,10 +23,10 @@
 .form-box
 {
     width:450px;
-	height:350px;
+	height:400px;
     border-radius: 1.5em;
 	position:relative;
-	margin:3em auto;
+	margin:2em auto;
 	background:rgba(0,0,0,0.85);
 	padding:10px;
     overflow: hidden;
@@ -83,11 +83,6 @@
 }
 .div-alignn{
     margin-left:0.5em;
-}
-input[type="button"]{
-    width: 100%;
-    background-color:rgb(240,60,115);
-    margin-left: 0.5em;
 }
 #divPhoto{
     margin-left: 0.6em;
@@ -320,3 +315,31 @@ a:hover {
 	background-color: rgba(0,0,0,0.5);
 	color: white;
 }
+.panel-heading{
+    border-top: 5px solid rgb(240, 60, 115);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.panel{
+    background-color: white;
+}
+.footer{
+    border-bottom: 5px solid rgb(240, 60, 115);
+    
+}
+.panel-footer{
+    border-bottom: 5px solid rgb(240, 60, 115);
+}
+
+.content2{
+    margin: 5em 0em;
+  
+}
+.card{
+    border-top:5px solid rgb(240,60,115);
+    border-bottom: 5px solid rgb(240, 60, 115);
+}
+input[type="button"]{
+	background-color: rgb(240, 60, 115);
+	color: white;
+	margin: 0.5em 0em;
+ }

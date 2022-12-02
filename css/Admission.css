@@ -139,7 +139,6 @@
     margin-left:0.5em;
 }
 input[type="button"]{
-    width: 100%;
     background-color:rgb(240,60,115);
     margin-left: 0.5em;
 }
@@ -229,4 +228,22 @@ a:hover {
 {
 	height: 45px;
 }
-
+.panel-heading{
+    border-top: 5px solid rgb(240, 60, 115);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.panel{
+    background-color: white;
+}
+.footer{
+    border-bottom: 5px solid rgb(240, 60, 115);
+    
+}
+.panel-footer{
+    border-bottom: 5px solid rgb(240, 60, 115);
+}
+input[type="button"]{
+	background-color: rgb(240, 60, 115);
+	color: white;
+	margin: 0.5em 0em;
+ }

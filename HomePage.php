@@ -79,7 +79,7 @@
         
 </div>
 <?php
-    include("includes/script.php");
+    include("includes/HomeScript.php");
     include("includes/Webscript.php");
 ?>
 </body>
