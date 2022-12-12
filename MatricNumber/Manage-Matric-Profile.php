@@ -50,6 +50,15 @@
           </li>
 
           <li class="nav-item">
+            <a href="Student-Bio.php" class="nav-link">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <p>
+                Student's Bio
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="MatricNumber.php" class="nav-link">
               <i class="fa-solid fa-graduation-cap"></i>
               <p>
@@ -115,7 +124,7 @@
                     <div class="panel-body"><!--panel-body -->
                     	<div class="row" id="my_profile">
                             <form action="../index.php" method="POST" enctype="multipart/form-data">
-	<div class="panel-body"><!--panel-body -->
+	    <div class="panel-body"><!--panel-body -->
     	<div class="row">
             <div class="col-md-4" id="divPhoto"> 
                 <img id="profile_pic1" alt="User Pic" src="../Images/Mensah.jpg" class="img-circle img-responsive">
@@ -164,18 +173,18 @@
                     </tbody>
                 </table>
             </div>  
-		</div>
-    <div class="panel-footer text-right">
-        <input type="button" class="btn" name="Update" value="Update" id="">
-       </div>
-	</div><br><!--panel-body -->   
-</form> 
-</div>
+        </div>
+        <div class="panel-footer text-right">
+            <input type="button" class="btn" name="Update" value="Update" id="">
+          </div>
+      </div><br><!--panel-body -->   
+        </form> 
+        </div>
 
-</div>                     
-            	</div><!--/. panel--> 
-        	</div>
-		</div><!--/.row --> 
+        </div>                     
+                      </div><!--/. panel--> 
+                  </div>
+            </div><!--/.row --> 
 	</section>
     
 </div>

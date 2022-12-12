@@ -73,8 +73,12 @@ form .page .field-1 .label-1{
 }
 form .page .field-2 .label-2{
   position: absolute;
-  top: -45px;
+  top: -35px;
   font-weight: 500;
+}
+.upload-warning{
+  margin:2em 0em 3em -19em;
+  color:red;
 }
 form .page .field input{
   height: 100%;

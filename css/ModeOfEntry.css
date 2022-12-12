@@ -5,7 +5,7 @@
     border-radius: 1.5em;
 	position:relative;
 	margin:2em auto;
-	background:rgba(0,0,0,0.85);
+	background:rgba(0,0,0,1);
 	padding:10px;
     overflow: hidden;
 }
@@ -50,7 +50,7 @@ a:hover {
 	text-decoration: none;
   }
   .main-sidebar{
-    background-color:rgba(0,0,0,0.85);
+    background-color:rgba(0,0,0,1);
 }
 .logo{
     width: 1em;

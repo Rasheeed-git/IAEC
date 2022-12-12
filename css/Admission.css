@@ -12,7 +12,7 @@
 	border-radius: 1em;
 	position:relative;
 	margin:2em auto;
-	background:rgba(0,0,0,0.85);
+	background:rgba(0,0,0,1);
 	padding:10px;
     overflow: hidden;
 }
@@ -113,7 +113,7 @@
 	border-radius: 30px;
 }
 .main-sidebar{
-    background-color:rgba(0,0,0,0.85);
+    background-color:rgba(0,0,0,1);
 }
 .logo{
     width: 1em;
@@ -234,14 +234,10 @@ a:hover {
 }
 .panel{
     background-color: white;
+	margin-bottom: 2em;
+	border-bottom: 5px solid rgb(240, 60, 115);
 }
-.footer{
-    border-bottom: 5px solid rgb(240, 60, 115);
-    
-}
-.panel-footer{
-    border-bottom: 5px solid rgb(240, 60, 115);
-}
+
 input[type="button"]{
 	background-color: rgb(240, 60, 115);
 	color: white;

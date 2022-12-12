@@ -51,19 +51,19 @@
                             <div class="label">
                                 First Name<span class = "star"> *</span>
                             </div>
-                            <input type="text" required>
+                            <input type="text" class="name" onfocus="this.value=''" required>
                         </div>
                         <div class="field">
                             <div class="label">
                                 Middle Name(optional)
                             </div>
-                            <input type="text" required>
+                            <input type="text" class="name" onfocus="this.value=''">
                         </div>
                         <div class="field">
                             <div class="label">
                                 Surname(Lastname)<span class = "star"> *</span>
                             </div>
-                            <input type="text" required>
+                            <input type="text" class="name" onfocus="this.value=''" required>
                         </div>
                         <div class="field-1">
                             <div class="label-1">
@@ -82,7 +82,8 @@
                             <div class="label-1">
                             Department<span class = "star"> *</span>
                             </div>
-                            <select name="" id="" required>
+                            <select name="" id="">
+                            <option value="" selected>--Please choose an option--</option>
                                 <option value="">ACCOUNTING</option>
                                 <option value="">BANKING & FINANCE</option>
                                 <option value="">BUSINESS ADMINISTRATION</option> 
@@ -98,7 +99,8 @@
                             <div class="label-1">
                             Department<span class = "star"> *</span>
                             </div>
-                            <select name="" id="" required>
+                            <select name="" id="">
+                            <option value="" selected>--Please choose an option--</option>
                                 <option value="">HISTORY</option>
                                 <option value="">INTERNATIONAL RELATIONS</option>
                                 <option value="">PUBLIC & LOCAL ADMINISTRATION</option>    
@@ -112,7 +114,8 @@
                             <div class="label-1">
                             Department<span class = "star"> *</span>
                             </div>
-                            <select name="" id="" required>
+                            <select name="" id="">
+                            <option value="" selected>--Please choose an option--</option>
                                 <option value="">ARCHITECTURE</option>
                                 <option value="">AGRICULTURAL AND RESOURCE ECONOMICS</option>
                                 <option value="">AGRICULTURAL EXTENSION AND COMMUNICATION TECHNOLOGY</option>  
@@ -129,7 +132,8 @@
                             <div class="label-1">
                             Department<span class = "star"> *</span>
                             </div>
-                            <select name="" id="" required>
+                            <select name="" id="">
+                            <option value="" selected>--Please choose an option--</option>
                                 <option value="">ENGLISH</option>
                                 <option value="">FRENCH AND INTERNATIONAL STUDIES</option>
                                 <option value="">JOURNALISM</option>     
@@ -152,7 +156,8 @@
                             <div class="label-2">
                                 Upload HND Result<span class = "star"> *</span>
                             </div>
-                            <input type="file" id="myfile" name="myfile" required>
+                            <input type="file" id="myfile" name="myfile" accept="image/*" required>
+                            <small class="upload-warning"><h5>please upload a valid and clear Image file.</h5></small>
                         </div>
                         
                         <div class="field btns" style="margin-top:8.5em">
@@ -183,7 +188,5 @@
 <?php
     include("../includes/Webscript.php");
 ?>
-
-    
 </body>
 </html>

@@ -73,6 +73,10 @@ body{
   display: block;
   position: relative;
 }
+.upload-warning{
+  margin:1.8em 0em 5em -19em;
+  color:red;
+}
 form .page .field .label{
   position: absolute;
   top: -20px;

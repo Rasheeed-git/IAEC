@@ -50,6 +50,15 @@
           </li>
 
           <li class="nav-item">
+            <a href="Student-Bio.php" class="nav-link">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <p>
+                Student's Bio
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="MatricNumber.php" class="nav-link active bg-light">
               <i class="fa-solid fa-graduation-cap"></i>
               <p>

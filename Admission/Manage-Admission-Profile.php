@@ -59,124 +59,136 @@
           </li>
           
           
-          <li class="nav-item">
-            <a href="Admission-Profile.php" class="nav-link">
-            <i class="fa-solid fa-user"></i>
+          <li class="nav-item menu-open">
+          <a href="" class="nav-link">
+          <i class="fa-solid fa-id-card-clip"></i>
+              
               <p>
-                Profile
+               Profile
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-          </li>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="Admission-Profile.php" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                  <p>View Profile</p>
+                </a>
+              </li>
 
-          <li class="nav-item">
-            <a href="Manage-Admission-Profile.php" class="nav-link active bg-light">
-            <i class="fa-solid fa-gear"></i>
-              <p>
-                Manage Profile
-              </p>
-            </a>
-          </li>
+              <li class="nav-item">
+                <a href="Manage-Admission-Profile.php" class="nav-link bg-light active">
+                <i class="fa-solid fa-user-pen"></i>
+                  <p>
+                    Manage Profile
+                  </p>
+                </a>
+              </li>
 
+            </ul>
+          </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
     
-  </aside>
+</aside>
+ <!--/SideBar-->
  
-    <!--/SideBar-->
- 
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h2 class="m-0">
-            </h2>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="Admission-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
-              <li class="breadcrumb-item active">Manage Profile</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-    <section class="content"> 
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h2 class="m-0">
+        </h2>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+        <li class="breadcrumb-item"><a href="Admission-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
+          <li class="breadcrumb-item active">Manage Profile</li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<section class="content"> 
     	<div class="row">
         	<div class="col-md-7">
-            	<div class="panel"><!--panel bg-maroon--> 	
-                <div class="panel-heading">	
-                    	<h4 class="panel-title" id="hname">Welcome! Update Details</h4>
-                    </div>			
+            	<div class="panel"><!--panel bg-white--> 
+                	<div class="panel-heading">	
+                    	<h4 class="panel-title" id="hname">Welcome! Mensah</h4>
+                    </div>				
                     <div class="panel-body"><!--panel-body -->
                     	<div class="row" id="my_profile">
-                            <form action="../index.php" method="POST" enctype="multipart/form-data">
-	<div class="panel-body"><!--panel-body -->
-    	<div class="row">
-            <div class="col-md-4" id="divPhoto"> 
-                <img id="profile_pic1" alt="User Pic" src="../Images/Mensah.jpg" class="img-circle img-responsive">
-                <input type="file" name="fileToUpload" id="fileToUpload" style="margin-top:1em;"> 
-            </div>
-            <div class=" col-md-8" id="divTable"> 
-                <table class="table table-bordered table-striped">
-                    <tbody class="content-body">
-                        <tr id="trFullName">
-                            <td class="col-md-4" id="tdFullName1">Full Name</td>
-                            <td id="tdFullName2"><input type="text" class="form-control" value="" name="full_name" id="full_name1" autocomplete="off"></td>
-                        </tr>
-                        <tr>
-                            <td id="tdIName1">Name With Initials</td>
-                            <td id="tdIName2"><input type="text" class="form-control" value="" name="i_name" id="i_name1" autocomplete="off"> </td>
-                        </tr>
-                        <tr>
-                            <td id="tdAddress1">Address</td>
-                            <td id="tdAddress2"><input type="text" class="form-control" value="" name="address" id="address1" autocomplete="off"></td>
-                        </tr>
-                        <tr>
-                            <td id="tdGender1">Gender</td>
-                            <td id="tdGender2">
-                                <select name="gender" class="form-control" id="gender2">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="tdEmail1">Email</td>
-                            <td id="tdEmail2"><input type="text" class="form-control" value="" name="email" id="email1" autocomplete="off"></td>
-                        </tr>
-                        <tr>
-                            <td id="tdPhone1">Phone Number</td>
-                            <td id="tdPhone2"><input type="text" class="form-control" value="" name="phone" id="phone1" autocomplete="off"></td>
-                        </tr>
-                        <tr>
-                            <td>User Name</td>
-                            <td id="user_name1"><input type="text" class="form-control" value="" name="phone" id="phone1" autocomplete="off"></td>
-                        </tr>
-                        <tr>
-                            <td id="tdPassword1">Password</td>
-                            <td id="tdPassword2"><input type="password" class="form-control" value="" name="password" id="password1" autocomplete="off"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>  
-		</div>
-       <div class="panel-footer text-right">
-        <input type="button" class="btn" name="Update" value="Update" id="">
-       </div>
-	</div><br><!--panel-body -->   
-</form> 
-</div>
-
-</div>                     
+                			<div class="col-md-12"> 
+                      <form action="../index.php" method="POST" enctype="multipart/form-data">
+                    <div class="panel-body"><!--panel-body -->
+                      <div class="row">
+                        <div class="col-md-4" id="divPhoto"> 
+                          <img id="profile_pic1" alt="User Pic" src="../Images/Mensah.jpg" class="img-circle img-responsive">
+                          <input type="file" name="fileToUpload" id="fileToUpload" style="margin-top:1em;"> 
+                        </div>
+                        <div class=" col-md-8" id="divTable"> 
+                            <table class="table table-bordered table-striped">
+                                <tbody class="content-body">
+                                    <tr id="trFullName">
+                                        <td class="col-md-4" id="tdFullName1">Full Name</td>
+                                        <td id="tdFullName2"><input type="text" class="form-control" value="" name="full_name" id="full_name1" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdIName1">Name With Initials</td>
+                                        <td id="tdIName2"><input type="text" class="form-control" value="" name="i_name" id="i_name1" autocomplete="off"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdAddress1">Address</td>
+                                        <td id="tdAddress2"><input type="text" class="form-control" value="" name="address" id="address1" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdGender1">Gender</td>
+                                        <td id="tdGender2">
+                                            <select name="gender" class="form-control" id="gender2">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdEmail1">Email</td>
+                                        <td id="tdEmail2"><input type="text" class="form-control" value="" name="email" id="email1" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdPhone1">Phone Number</td>
+                                        <td id="tdPhone2"><input type="text" class="form-control" value="" name="phone" id="phone1" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>User Name</td>
+                                        <td id="user_name1"><input type="text" class="form-control" value="" name="phone" id="phone1" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdPassword1">Password</td>
+                                        <td id="tdPassword2"><input type="password" class="form-control" value="" name="password" id="password1" autocomplete="off"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>  
+                      </div>
+                        <div class="panel-footer text-right">
+                          <input type="button" class="btn" name="Update" value="Update" id="">
+                        </div>
+                    </div>
+                  <!--panel-body -->   
+            </form> 
+                  			</div>
+                   		</div>
+                     </div>
             	</div><!--/. panel--> 
         	</div>
 		</div><!--/.row --> 
-	</section>
+</section>
     
 </div>
     <footer class="main-footer">

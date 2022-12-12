@@ -59,23 +59,35 @@
                 </li>
                 
                 
-                <li class="nav-item">
-                  <a href="Admission-Profile.php" class="nav-link" >
-                  <i class="fa-solid fa-user"></i>
-                    <p>
-                      Profile
-                    </p>
-                  </a>
-                </li>
+             
+          <li class="nav-item">
+          <a href="" class="nav-link">
+          <i class="fa-solid fa-id-card-clip"></i>
+              
+              <p>
+               Profile
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="Admission-Profile.php" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                  <p>View Profile</p>
+                </a>
+              </li>
 
-                <li class="nav-item">
-                  <a href="Manages-Admission-Profile.php" class="nav-link">
-                  <i class="fa-solid fa-gear"></i>
-                    <p>
-                      Manage Profile
-                    </p>
-                  </a>
-                </li>
+              <li class="nav-item">
+                <a href="Manage-Admission-Profile.php" class="nav-link">
+                <i class="fa-solid fa-user-pen"></i>
+                  <p>
+                    Manage Profile
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
 
               </ul>
             </nav>

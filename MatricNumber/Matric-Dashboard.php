@@ -41,10 +41,19 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="Matric-Dashboard.php" class="nav-link" >
+            <a href="Matric-Dashboard.php" class="nav-link active bg-light" >
             <i class="fa-solid fa-gauge"></i>
               <p>
                 Dashboard
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Student-Bio.php" class="nav-link">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <p>
+                Student's Bio
               </p>
             </a>
           </li>
@@ -60,7 +69,7 @@
           
           
           <li class="nav-item">
-            <a href="Matric-Profile.php" class="nav-link active bg-light">
+            <a href="Matric-Profile.php" class="nav-link">
             <i class="fa-solid fa-user"></i>
               <p>
                 Profile
@@ -85,7 +94,7 @@
     
   </aside>
  
-    <!--/SideBar-->
+<!--/SideBar-->
  
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -97,74 +106,24 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="Admission-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
-              <li class="breadcrumb-item active">Profile</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-<div class="div-align">
-<section class="content"> 
-    	<div class="row">
-        	<div class="col-md-7">
-            	<div class="panel"><!--panel bg-maroon--> 
-                	<div class="panel-heading">	
-                    	<h4 class="panel-title" id="hname">Welcome! Mensah</h4>
-                    </div>				
-                    <div class="panel-body"><!--panel-body -->
-                    	<div class="row" id="my_profile">
-                			<div class="col-md-3"> 
-                				<img id="photo2" alt="User Pic" src="../Images/Mensah.jpg" class="img-circle img-responsive"> 
-                			</div>
-                			<div class=" col-md-9"> 
-                  				<table class="table table-bordered table-striped">
-                    				<tbody>
-                      					<tr>
-                        					<td class="col-md-4">Full Name</td>
-                        					<td id="full_name">Jean Hermann Mensah</td>
-                      					</tr>
-                      					<tr>
-                        					<td>Name With Initials</td>
-                        					<td id="i_name">Mensah </td>
-                      					</tr>
-                             			<tr>
-                        					<td>Address</td>
-                        					<td id="address">Togo Lome </td>
-                      					</tr>
-                        				<tr>
-                        					<td>Gender</td>
-                        					<td id="gender">Male </td>
-                      					</tr>
-                      					<tr>
-                        					<td>Email</td>
-                        					<td id="email">Mensah@gmail.com </td>
-                      					</tr>
-                                        <tr>
-                        					<td>Phone Number</td>
-                        					<td id="phone">111-111-1114 </td>
-                      					</tr>
-                                        <tr>
-                        					<td>User Name</td>
-                        					<td id="email">Mensah@gmail.com </td>
-                      					</tr>
-                                        <tr>
-                        					<td>Password</td>
-                        					<td id="phone">12345 </td>
-                      					</tr>
-                    				</tbody>
-                  				</table>
-                  			</div>
-                   		</div>
-                        <p class= "footer"><strong>Note: We get the email address for the user name.</strong></p>
-                     </div>
-            	</div><!--/. panel--> 
-        	</div>
-		</div><!--/.row --> 
-</section>
-</div>
-    
+    <div class="row">
+         <div class="col-sm-12">
+           <!-- <div class="card">
+                <div class="card-header">
+                    <h3>
+                    Dashboard
+                    </h3>
+                </div>
+            </div>-->
+        </div>
+    </div>
     
 </div>
     <footer class="main-footer">

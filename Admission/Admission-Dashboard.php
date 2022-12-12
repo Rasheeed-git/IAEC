@@ -58,25 +58,35 @@
             </a>
           </li>
           
+          <li class="nav-item">
+          <a href="" class="nav-link">
+          <i class="fa-solid fa-id-card-clip"></i>
+              
+              <p>
+               Profile
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="Admission-Profile.php" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                  <p>View Profile</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Manage-Admission-Profile.php" class="nav-link">
+                <i class="fa-solid fa-user-pen"></i>
+                  <p>
+                    Manage Profile
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
           
-          <li class="nav-item">
-            <a href="Admission-Profile.php" class="nav-link">
-            <i class="fa-solid fa-user"></i>
-              <p>
-                Profile
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="Manage-Admission-Profile.php" class="nav-link">
-            <i class="fa-solid fa-gear"></i>
-              <p>
-                Manage Profile
-              </p>
-            </a>
-          </li>
-
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -104,17 +114,6 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-    <div class="row">
-         <div class="col-sm-12">
-           <!-- <div class="card">
-                <div class="card-header">
-                    <h3>
-                    Dashboard
-                    </h3>
-                </div>
-            </div>-->
-        </div>
-    </div>
     
 </div>
     <footer class="main-footer">

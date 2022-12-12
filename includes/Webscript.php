@@ -255,4 +255,24 @@
         });
     </script>
 
-    
+    <!--Accept Only Alphabet for Input-->
+    <script>
+      function alphaOnly() {
+    let nameInput = document.querySelectorAll('.name');
+      nameInput.forEach((input) => {
+  
+        input.addEventListener('keydown', (e) => {
+          let charCode = e.keyCode;
+  
+          if ((charCode >= 65 && charCode <= 90) || charCode == 8 || charCode == 32) {
+            null;
+          } else {
+            e.preventDefault();
+          }
+        });
+      });
+    }
+
+     alphaOnly();
+</script>
+ <!--/Accept Only Alphabet for Input-->
