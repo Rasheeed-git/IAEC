@@ -83,7 +83,10 @@ padding-left: 0.5em;
     background-color:white;
     padding: 0em 0em 0.5em;
 }
-/*profile*/
+.nav-link{
+    color:rgb(240, 60, 115);
+}
+/*profile
 .panel-heading{
     border-top: 5px solid rgb(240, 60, 115);
     border-bottom: 1px solid rgba(0,0,0,0.2);
@@ -106,4 +109,4 @@ padding-left: 0.5em;
 .card{
     border-top:5px solid rgb(240,60,115);
     border-bottom: 5px solid rgb(240, 60, 115);
-}
+}*/

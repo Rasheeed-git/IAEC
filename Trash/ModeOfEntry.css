@@ -5,7 +5,7 @@
     border-radius: 1.5em;
 	position:relative;
 	margin:2em auto;
-	background:rgba(0,0,0,1);
+	background:#343a40;
 	padding:10px;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@
 	background-color: rgb(240, 60, 115);
 	height: 1px;
 }
-.dropdown-menu{
+#dropdown-menu{
 	background-color: antiquewhite;
 	color: white;
 	width: 20em;
@@ -75,4 +75,8 @@ a:hover {
 	width: 3.5em;
 	height: 4em;
 	border-radius: 40%;
+}
+.online{
+	font-size:1.5em;
+	color:green
 }

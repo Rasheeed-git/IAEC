@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Images/iaec-logo.png" type="" width="2px" height= "2px">
+    <link rel="icon" href="../Images/iaec-logo.png" type="">
     <link rel="stylesheet" type="text/css" href="../font/css/all.css">
     <link rel="stylesheet" href="../css/Fresh-Admission.css">
     <title>Fresh Admission-IAEC University</title>
@@ -147,7 +147,7 @@
                         
                         <div class="field-next">
                             <button class="firstNext next">Next</button>
-                            <a href="ModeOfEntry.php" class = "Dashboard-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                            <a href="Admission.php" class = "Dashboard-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
                         </div>
                     </div>
 

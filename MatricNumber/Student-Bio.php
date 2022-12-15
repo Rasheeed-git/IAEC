@@ -7,7 +7,7 @@
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">
     <?php 
     include('../includes/Admission-Topbar.php');
@@ -16,7 +16,7 @@
 <div class="content-wrapper">
 
 <!--SideBar-->
-<aside class="main-sidebar sidebar-dark-primary elevation-10">
+<aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
     <!-- Brand Logo -->
     <a href="https://iaec-university.tg" class="brand-link">
       <img src="../Images/iaec-logo.png" alt="IEAC-Logo" class = "logo">
@@ -31,7 +31,7 @@
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
-          <a href="#" class="d-block"> * online</a>
+          <a href="#" class="d-block"> <b class="online"> &#x2022;</b> Online</a>
         </div>
       </div>
 
@@ -77,15 +77,6 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="Manage-Matric-Profile.php" class="nav-link">
-            <i class="fa-solid fa-gear"></i>
-              <p>
-                Manage Profile
-              </p>
-            </a>
-          </li>
-
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -121,7 +112,7 @@
             	<!-- general form elements -->
               	<div class="box box-primary">
                 	<div class="box-header with-border">
-                  		<h3 class="box-title">Continue Assessment</h3>
+                  		<h3 class="box-title">Student ID</h3>
                 	</div><!-- /.box-header -->
                   	<div class="box-body">
 						<div class="row align-items-center g-3">

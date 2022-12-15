@@ -7,7 +7,7 @@
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">
     <?php 
     include('../includes/Admission-Topbar.php');
@@ -16,7 +16,7 @@
 <div class="content-wrapper">
 
 <!--SideBar-->
-<aside class="main-sidebar sidebar-dark-primary elevation-10">
+<aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
     <!-- Brand Logo -->
     <a href="https://iaec-university.tg" class="brand-link">
       <img src="../Images/iaec-logo.png" alt="IEAC-Logo" class = "logo">
@@ -31,7 +31,7 @@
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
-          <a href="#" class="d-block"> * online</a>
+          <a href="#" class="d-block"> <b class="online"> &#x2022;</b> Online</a>
         </div>
       </div>
 
@@ -51,7 +51,7 @@
 
           <li class="nav-item">
             <a href="Payment.php" class="nav-link active bg-light">
-              <i class="fa-solid fa-graduation-cap"></i>
+            <i class="fa-solid fa-credit-card"></i>
               <p>
                 Payment
               </p>
@@ -64,15 +64,6 @@
             <i class="fa-solid fa-user"></i>
               <p>
                 Profile
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="Manage-Payment-Profile.php" class="nav-link">
-            <i class="fa-solid fa-gear"></i>
-              <p>
-                Manage Profile
               </p>
             </a>
           </li>

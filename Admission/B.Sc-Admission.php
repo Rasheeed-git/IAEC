@@ -146,7 +146,7 @@
                         </div>
                         <div class="field-next">
                             <button class="firstNext next">Next</button>
-                            <a href="ModeOfEntry.php" class = "Dashboard-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                            <a href="Admission.php" class = "Dashboard-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
                         </div>
                     </div>
 

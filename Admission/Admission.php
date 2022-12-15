@@ -7,7 +7,7 @@
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">
     <?php 
     include('../includes/Admission-Topbar.php');
@@ -16,7 +16,7 @@
 <div class="content-wrapper">
 
 <!--SideBar-->
-<aside class="main-sidebar sidebar-dark-primary elevation-10">
+<aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
     <!-- Brand Logo -->
     <a href="https://iaec-university.tg" class="brand-link">
       <img src="../Images/iaec-logo.png" alt="IEAC-Logo" class = "logo">
@@ -31,7 +31,7 @@
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
-          <a href="#" class="d-block"> * online</a>
+          <a href="#" class="d-block"> <b class="online"> &#x2022;</b> Online</a>
         </div>
       </div>
 
@@ -50,7 +50,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="Admission.php" class="nav-link active bg-light">
+            <a href="Admission.php" class="nav-link bg-light active">
               <i class="fa-solid fa-graduation-cap"></i>
               <p>
                 Admission
@@ -59,34 +59,15 @@
           </li>
           
           
-           <li class="nav-item">
-          <a href="" class="nav-link">
-          <i class="fa-solid fa-id-card-clip"></i>
-              
-              <p>
+          <li class="nav-item">
+          <a href="Admission-Profile.php" class="nav-link">
+           <i class="fa-solid fa-user"> </i>
+               <p>
                Profile
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="Admission-Profile.php" class="nav-link">
-                <i class="fa-solid fa-user"></i>
-                  <p>View Profile</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="Manage-Admission-Profile.php" class="nav-link">
-                <i class="fa-solid fa-user-pen"></i>
-                  <p>
-                    Manage Profile
-                  </p>
-                </a>
-              </li>
-
-            </ul>
           </li>
+          
           
 
         </ul>
@@ -118,7 +99,7 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-        <div class="form-box text-center">
+     <!--   <div class="form-box text-center">
             <div class="w-100">
             <img src="../Images/iaec-university-logo.png" alt="IAEC LOGO">
             </div>
@@ -140,14 +121,95 @@
             </div>
                 <button type='submit'class='submit-btn'><b>Log in</b></button>
             </form>
-        </div>
+        </div>-->
     
+
+      <section class="content">
+    	  <div class="row">
+          
+        	<!-- left column -->
+            	<!--Starting-->	
+           <div class="col-sm-5">
+           <div class="box-header">
+            <h4 class="heading">Provide Admission</h4>
+          </div>
+              <div class="card card-pink card-outline card-outline-tabs">
+                <div class="card-header p-0 border-bottom-0">
+                  <ul class="nav nav-tabs nav-justified" id="custom-tabs-four-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Provisional Admission</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Perpetual Admission</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-four-tabContent">
+                    <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                                <div class="box-body">
+                                  <div class="form-group" id="divGrade">
+                                      <label for="" class="heading">Mode Of Entry</label>
+                                      <select name="EntryMode" id="EntryMode" class="form-control">
+                                        <option value="" selected>Please choose an option</option>
+                                        <option class="option" value="Fresh"><a href="Fresh-Admission.php">Fresh</a></option>
+                                        <option class="option" value="directentry">Direct Entry</option>
+                                        <option class="option" value="Transfer"><a href="Transfer-Admission.php">Transfer</a></option>
+                                      </select>
+                                    </div>
+
+                                    <div class="form-group EntryMode" id="Showdirectentry" style="display:none">
+                                      <label for="" class="heading">Direct Entry</label>
+                                      <select name="" id="EntryMode1" class="form-control">
+                                        <option value="" selected>Please choose an option</option>
+                                        <option class="option" value="ND" ><a href="ND-Admission.php">National/Ordinary Diploma (ND/OND)</a> </option>
+                                        <option class="option" value="NCE" ><a href="NCE-Admission">Nigerian Certificate of Education (NCE)</a> </option>
+                                        <option class="option" value="AND" ><a href="Advance-Admission">Advance National/Ordinary Diploma (ND/OND)</a> </option>
+                                        <option class="option" value="HND" ><a href="HND-Admission">Higher National Diploma (HND)</a> </option>
+                                        <option class="option" value="BSC" ><a href="B.Sc-Admission">Bachelor of Science/Technology (B.Sc/B.Tech)</a> </option>
+                                      </select>
+                                    </div>
+                                      
+                                </div><!-- /.box-body -->
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                        <!-- general form elements -->
+                            <form role="form" action="../index.php" method="post" id="form1">                    
+                                <div class="box-body">
+                                  <div class="form-group" id="divGrade">
+                                      <label for="">Admission Number</label>
+                                      <input type="text" class="form-control" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                                  </div>
+                                      
+                                </div><!-- /.box-body -->
+                                <div class="box-footer">
+                                  <input type="hidden" name="do" value="add_grade">
+                                  <button type="submit" class="btn float-right" id="btnSubmit">Submit</button>
+                                </div>
+                            </form>  
+                    </div>
+                    
+                  </div><!--tab-content-->
+                </div>  <!-- /.card --> 
+              </div>
+            
+          </div><!-- /.col-sm-12 -->
+
+          <!--Ending-->
+        </div>
+      </section>
+
+         <!--Fresh Admission-->
+         <!--/Fresh Admission-->
+
 </div>
     <footer class="main-footer">
         <strong>© <a href = "https://iaec-university.tg" class = "footer-link"> IAEC University Togo </a>|  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link" style = "">HR_Rashid Tech.</a></strong>
     </footer>
 </div>
 <!--JQuery-->
+
+
 
 <?php 
   include('../includes/script.php');

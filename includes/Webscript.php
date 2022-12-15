@@ -65,11 +65,6 @@
 		});
 	</script>
 	<!--/Show and Hide Password Script-->
-    <!--
-
-    
-
-    -->
 
     <script>
 		const slidePage = document.querySelector(".slide-page");
@@ -189,6 +184,60 @@
     }
 }
 	</script>
+
+    <!--Mode Of Admission for Direct Entry-->
+    <script>
+        $(document).ready(function(){
+            $('#EntryMode').on('change', function(){
+                var demovalue = $(this).val(); 
+                $("div.EntryMode").hide();
+                $("#Show"+demovalue).show();
+            });
+        });
+    </script> 
+    <!--Open Page-->
+        <script>
+        document.getElementById('EntryMode').addEventListener('change', function() {
+        val = $( "#EntryMode" ).val();
+            
+        console.log(val)
+        if(val === 'Fresh') {
+            location = "Fresh-Admission.php";
+            }
+        else if(val === 'Transfer') {
+            location = "Transfer-Admission.php";
+            }
+        });
+    </script>
+
+    <!--Open Page-->
+    <script>
+    document.getElementById('EntryMode1').addEventListener('change', function() {
+    val = $( "#EntryMode1" ).val();
+        
+    console.log(val)
+    if(val === 'ND') {
+        location = "ND-Admission.php";
+        }
+    if(val === 'NCE') {
+        location = "NCE-Admission.php";
+        }
+    if(val === 'AND') {
+    location = "Advance-Admission.php";
+    }
+    if(val === 'HND') {
+    location = "HND-Admission.php";
+    }
+    if(val === 'BSC') {
+    location = "B.Sc-Admission.php";
+    }
+    });
+
+    </script>
+    
+    <!--/Mode Of Admission for Direct Entry-->
+
+
 	<!-- Payment Select script-->
     <script type="text/javascript">
         function filter(element) {

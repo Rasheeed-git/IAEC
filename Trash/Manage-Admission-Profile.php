@@ -7,7 +7,7 @@
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
 <div class="wrapper">
     <?php 
     include('../includes/Admission-Topbar.php');
@@ -16,7 +16,7 @@
 <div class="content-wrapper">
 
 <!--SideBar-->
-<aside class="main-sidebar sidebar-dark-primary elevation-10">
+<aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
     <!-- Brand Logo -->
     <a href="https://iaec-university.tg" class="brand-link">
       <img src="../Images/iaec-logo.png" alt="IEAC-Logo" class = "logo">
@@ -31,7 +31,7 @@
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
-          <a href="#" class="d-block"> * online</a>
+          <a href="#" class="d-block"> <b style="font-size:1.5em;color:green"> &#x2022;</b> Online</a>
         </div>
       </div>
 

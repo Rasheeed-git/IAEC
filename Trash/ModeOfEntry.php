@@ -7,7 +7,7 @@
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
 <div class="wrapper">
     <?php 
     include('../includes/Admission-Topbar.php');
@@ -16,7 +16,7 @@
   <div class="content-wrapper">
 
       <!--SideBar-->
-      <aside class="main-sidebar sidebar-dark-primary elevation-10">
+      <aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
           <!-- Brand Logo -->
           <a href="https://iaec-university.tg" class="brand-link">
             <img src="../Images/iaec-logo.png" alt="IEAC-Logo" class = "logo">
@@ -31,7 +31,7 @@
               </div>
               <div class="info"> 
                 <a href="#" class="d-block">Jean Hermann Mensah</a>
-                <a href="#" class="d-block"> * online</a>
+                <a href="#" class="d-block"> <b class="online"> &#x2022;</b> Online</a>
               </div>
             </div>
 
@@ -41,54 +41,33 @@
                 <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                  <a href="Admission-Dashboard.php" class="nav-link" >
-                  <i class="fa-solid fa-gauge"></i>
-                    <p>
-                      Dashboard
-                    </p>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="Admission.php" class="nav-link active bg-light">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p>
-                      Admission
-                    </p>
-                  </a>
-                </li>
-                
-                
-             
-          <li class="nav-item">
-          <a href="" class="nav-link">
-          <i class="fa-solid fa-id-card-clip"></i>
-              
+            <a href="Admission-Dashboard.php" class="nav-link" >
+            <i class="fa-solid fa-gauge"></i>
               <p>
-               Profile
-                <i class="right fas fa-angle-left"></i>
+                Dashboard
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="Admission-Profile.php" class="nav-link">
-                <i class="fa-solid fa-user"></i>
-                  <p>View Profile</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="Manage-Admission-Profile.php" class="nav-link">
-                <i class="fa-solid fa-user-pen"></i>
-                  <p>
-                    Manage Profile
-                  </p>
-                </a>
-              </li>
-
-            </ul>
           </li>
 
+          <li class="nav-item">
+            <a href="Admission.php" class="nav-link bg-light active">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <p>
+                Admission
+              </p>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item">
+          <a href="Admission-Profile.php" class="nav-link">
+           <i class="fa-solid fa-user"> </i>
+               <p>
+               Profile
+              </p>
+            </a>
+          </li>
+          
               </ul>
             </nav>
             <!-- /.sidebar-menu -->
@@ -129,7 +108,7 @@
                       <button type="button" class="submit-btn dropdown-toggle" data-toggle="dropdown">
                         <b>Direct Entry</b>
                       </button>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu" id="dropdown-menu">
                           <li><a class="dropdown-item" href="ND-Admission.php">OND/ND</a></li>
                           <li><a class="dropdown-item" href="NCE-Admission.php">NCE</a></li>
                           <li><a class="dropdown-item" href="Advance-Admission.php">Advance OND/ND</a></li>
