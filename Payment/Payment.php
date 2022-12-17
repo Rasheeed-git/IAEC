@@ -57,6 +57,15 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="Record-Payment.php" class="nav-link">
+            <i class="fa-solid fa-book"></i>
+              <p>
+                Record
+              </p>
+            </a>
+          </li>
           
           
           <li class="nav-item">
@@ -97,95 +106,72 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-      
-    <div class="form-box text-center">
-            <h3 class = "header w-100">Payment</h3>
-            <hr class = "horizontal-line">
-            <div id='provisional' class='input-group-provisional'>
-                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm1"><b>Fresh Student</b></a>
-                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm2"><b>Returning Student</b></a>
-                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm3"><b>Carryover/Spillover Student</b></a>
-                <a href = "" class='submit-btn'  data-toggle="modal" data-target="#modal-sm4"><b>Hostel</b></a>
-            </div>
-        </div>
-    </div>
-        
 
-    <!--Modal 1-->
-    <div class="modal fade" id="modal-sm1" style="display: none;" aria-hidden="true">
-    <div class="form-box2">
-        <form id='perpetual' class='input-group-perpetual'>
-            <div class="inputBox1">
-                <input type='text'class='input-field1' id="Name" name = "Name" onkeyup="filter(this)" autocomplete="off" onfocus="this.value=''" required>
-                <b>Admission Number</b>
-                <i></i>
-            </div>
-            <ul class="the-dropdown-list" id="therealitems">
-                        <li class="the-dropdown-item">Javascript</li>
-                        <li class="the-dropdown-item">JAVA</li>
-                        <li class="the-dropdown-item">C#</li>
-                        <li class="the-dropdown-item">Python</li>
-                        <li class="the-dropdown-item">Golang</li>
-                        <li class="the-dropdown-item">HTML 5</li>
-                        <li class="the-dropdown-item">CSS</li>
-                        <li class="the-dropdown-item">Ruby</li>
-                        <li class="the-dropdown-item">Scala</li>
-                        <li class="the-dropdown-item">Swift</li>
-                        <li class="the-dropdown-item">Elm</li>
-                        <li class="the-dropdown-item">Rust</li>
-            </ul>
-            <button type='submit' name ="submit" class='submit-btn2'><b>Log in</b></button>
-            <a href="" class = "Dashboard-link2"><i class="fa-solid fa-xmark"></i> Close</a>
-        </form>
-    </div>
-    </div>
-
-    <!--Modal 2-->
-    <div class="modal fade" id="modal-sm2" style="display: none;" aria-hidden="true">
-    <div class="form-box1">
-            <form id='perpetual' class='input-group-perpetual'>
-            <div class="inputBox">
-                <input type='text'class='input-field' onfocus="this.value=''" required>
-                <b>Matriculation Number</b>
-                <i></i>
-            </div>
-                <button type='submit'class='submit-btn' name = "submit"><b>Log in</b></button>
-                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-xmark"></i> Close</a>
-            </form>
-    </div>
-    </div>
-
-      <!--Modal 3-->
-      <div class="modal fade" id="modal-sm3" style="display: none;" aria-hidden="true">
-    <div class="form-box1">
-            <form id='perpetual' class='input-group-perpetual'>
-            <div class="inputBox">
-                <input type='text'class='input-field' onfocus="this.value=''" required>
-                <b>Matriculation Number</b>
-                <i></i>
-            </div>
-                <button type='submit'class='submit-btn' name = "submit"><b>Log in</b></button>
-                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-xmark"></i> Close</a>
-            </form>
-    </div>
-    </div>
-
-     <!--Modal 4-->
-     <div class="modal fade" id="modal-sm4" style="display: none;" aria-hidden="true">
-    <div class="form-box1">
-            <form id='perpetual' class='input-group-perpetual'>
-            <div class="inputBox">
-                <input type='text'class='input-field' onfocus="this.value=''" required>
-                <b>Admission Number/Matric Number</b>
-                <i></i>
-            </div>
-                <button type='submit'class='submit-btn' name = "submit"><b>Log in</b></button>
-                <a href="" class = "Dashboard-link1"><i class="fa-solid fa-xmark"></i> Close</a>
-            </form>
-    </div>
-    </div>
+    <section class="content">
+    	<div class="row">
+        	<!-- left column -->
+            <div class="col-sm-4">
+            	<!-- general form elements -->
+              	<div class="box box-primary pay-box">
+                	<div class="box-header with-border">
+                  		<h3 class="box-title heading ml-2">Payment Type</h3>
+                	</div><!-- /.box-header -->
+                  	<div class="box-body pay-body">
+                        <div class="form-group" id="">
+                          <label for="" class="heading ml-2">Select Payment Type</label>
+                          <select name="" id="PayType" onchange ="showDivPay('div',this)" class="form-control col-sm-11 ml-2">
+                            <option value="" selected>Please choose an option</option>
+                            <option class="" value="Fresh">Fresh Student</option>
+                            <option class="" value="Returning">Returning Student</option>
+                            <option class="" value="CO">CarryOver/SpillOver Student </option>
+                            <option class="" value="Hostel">Hostel Fee</option>
+                            <option class="" value="Others">Others Fee</option>
+                          </select>
+                        </div>
+                        <div class="form-group" id="divFresh" style="display:none;">
+                          <form role="form" action="Fresh-Payment.php" method="post" id=""> 
+                              <label for="" class="heading ml-2">Admission Number</label>
+                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                            </form> 
+                        </div>
+                        <div class="form-group" id="divReturning" style="display:none;">
+                          <form role="form" action="Returning-Payment.php" method="post" id=""> 
+                              <label for="" class="heading ml-2">Matric Number</label>
+                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                            </form> 
+                        </div>
+                        <div class="form-group" id="divCO" style="display:none;">
+                          <form role="form" action="CarryOver-Payment.php" method="post" id=""> 
+                              <label for="" class="heading ml-2">Matric Number</label>
+                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                            </form> 
+                        </div>
+                        <div class="form-group" id="divHostel" style="display:none;">
+                          <form role="form" action="Hostel-Payment.php" method="post" id=""> 
+                              <label for="" class="heading ml-2">Admission/Matric Number</label>
+                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                            </form> 
+                        </div>
+                        <div class="form-group" id="divOthers" style="display:none;">
+                          <form role="form" action="Others-Payment.php" method="post" id=""> 
+                              <label for="" class="heading ml-2">Matric Number</label>
+                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                            </form> 
+                        </div>
+                        
+                  	</div><!-- /.box-body -->
+                  
+            	</div><!-- /.box -->
+        	</div>
+    	</div>
+	</section>
     
-    
+
 </div>
     <footer class="main-footer">
         <strong>© <a href = "https://iaec-university.tg" class = "footer-link"> IAEC University Togo </a>|  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link" style = "">HR_Rashid Tech.</a></strong>

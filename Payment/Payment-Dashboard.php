@@ -58,6 +58,14 @@
             </a>
           </li>
           
+          <li class="nav-item">
+            <a href="Record-Payment.php" class="nav-link">
+            <i class="fa-solid fa-book"></i>
+              <p>
+                Record
+              </p>
+            </a>
+          </li>
           
           <li class="nav-item">
             <a href="Payment-Profile.php" class="nav-link">
@@ -67,6 +75,7 @@
               </p>
             </a>
           </li>
+
 
         </ul>
       </nav>

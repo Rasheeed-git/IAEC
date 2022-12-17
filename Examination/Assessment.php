@@ -132,7 +132,7 @@
                   		<h3 class="box-title">Continue Assessment</h3>
                 	</div><!-- /.box-header -->
                   	<div class="box-body">
-						<div class="row align-items-center g-3">
+						          <div class="row align-items-center g-3">
 
 							<div class="col-auto">
                             <label class="visually-hidden" for="inputEmail">Matric Number</label>

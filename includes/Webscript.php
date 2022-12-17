@@ -195,6 +195,93 @@
             });
         });
     </script> 
+    <!--Payment Type-->
+    <script>
+    function showDivPay(prefix,chooser){
+    var selectedOption = (chooser.options[chooser.selectedIndex].value);
+    if(selectedOption == "Fresh")
+    {
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+    }
+    else if(selectedOption == "Returning")
+    {
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+    }
+    else if(selectedOption == "CO")
+    {
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+    }
+    else if(selectedOption == "Hostel")
+    {
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+		
+    }
+    else if(selectedOption == "Others")
+    {
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'block';
+		
+    }
+    else{
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'none';
+    }
+}
+	</script>
+    <!--/Payment Type-->
+
     <!--Open Page-->
         <script>
         document.getElementById('EntryMode').addEventListener('change', function() {
@@ -236,74 +323,6 @@
     </script>
     
     <!--/Mode Of Admission for Direct Entry-->
-
-
-	<!-- Payment Select script-->
-    <script type="text/javascript">
-        function filter(element) {
-            var value = $(element).val().toLowerCase();
-            var text;
-            var searchValue;
-            var liValue;
-
-            $("#therealitems > li").each(function() {
-                if ($(this).text().toLowerCase().search(value) > -1) {
-                    $(this).show();
-                    var text = $(this).show();
-                    if (text.length === 1) {
-                        searchValue = text[0];
-                    }
-                } else {
-                    $(this).hide();
-                }
-
-            });
-
-            $('.input-field1').on('keypress', function(e) {
-                if (e.key === 'Enter' || e.keyCode === 13) {
-                    $('.input-field1').val(searchValue.innerText);
-                    e.preventDefault();
-                    $('.the-dropdown-list').slideUp('fast');
-                }
-            });
-
-        }
-        $(document).ready(function() {
-
-            $('.input-field1').on('click', function() {
-                $(this).parent().next().slideDown('fast');
-            });
-
-            $('.the-select-btn').on('click', function() {
-                $('.the-dropdown-list').slideUp('fast');
-
-                if (!$(this).prev().attr('disabled')) {
-                    $(this).prev().trigger('click');
-                }
-            });
-
-            $('.input-field1').width($('.inputBox1').width() - $('.the-select-btn').width() - 13);
-
-            $('.the-dropdown-list').width($('.inputBox1').width());
-
-            $('.input-field1').val('');
-
-            $('li.the-dropdown-item').on('click', function() {
-                var text = $(this).html();
-                $(this).parent().prev().find('.input-field1').val(text);
-                $('.the-dropdown-list').slideUp('fast');
-            });
-
-            $(document).on('click', function(event) {
-                if ($(event.target).closest(".input-field1, .the-select-btn").length)
-                    return;
-                $('.the-dropdown-list').slideUp('fast');
-                event.stopPropagation();
-            });
-
-        });
-    </script>
-
     <!--Accept Only Alphabet for Input-->
     <script>
       function alphaOnly() {

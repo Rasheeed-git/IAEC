@@ -58,6 +58,14 @@
             </a>
           </li>
           
+          <li class="nav-item">
+            <a href="Record-Payment.php" class="nav-link">
+            <i class="fa-solid fa-book"></i>
+              <p>
+                Record
+              </p>
+            </a>
+          </li>
           
           <li class="nav-item">
             <a href="Payment-Profile.php" class="nav-link active bg-light">
@@ -304,7 +312,7 @@
         <!-- /.card -->
       </div>
     
-  </div><!-- /.col-sm-6 -->
+  </div><!-- /.col-sm-7 -->
 
 </div><!-- /.row -->
 </section><!-- /.section content -->
