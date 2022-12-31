@@ -49,28 +49,29 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="Student-Bio.php" class="nav-link">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <p>
-                Student's Bio
-              </p>
-            </a>
-          </li>
 
           <li class="nav-item">
             <a href="MatricNumber.php" class="nav-link">
-              <i class="fa-solid fa-graduation-cap"></i>
+            <i class="fa-solid fa-arrow-up-1-9"></i>
               <p>
                 Matric Number
               </p>
             </a>
           </li>
-          
+
+          <li class="nav-item">
+            <a href="Student.php" class="nav-link">
+            <i class="fa-solid fa-user-tie"></i>
+              <p>
+                Student
+              </p>
+            </a>
+          </li>
+
           
           <li class="nav-item">
             <a href="Matric-Profile.php" class="nav-link active bg-light">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-id-card"></i>
               <p>
                 Profile
               </p>

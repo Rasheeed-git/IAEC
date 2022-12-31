@@ -69,7 +69,7 @@
           
           <li class="nav-item">
             <a href="Payment-Profile.php" class="nav-link">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-id-card"></i>
               <p>
                 Profile
               </p>
@@ -114,12 +114,11 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>&#x20A6 151,150</h3>
-
+                <h3>151,150</h3>
                 <h4>Paid Amount</h4>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-credit-card"></i>
               </div>
               <a href="#" class="small-box-footer">Paid Amount</a>
             </div>
@@ -129,14 +128,14 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>&#x20A6 250,500</h3>
+                <h3>250,500</h3>
 
-                <h4>Balance Amount</h4>
+                <h4>Unpaid Amount</h4>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-credit-card"></i>
               </div>
-              <a href="#" class="small-box-footer">Balance Amount</a>
+              <a href="#" class="small-box-footer">Unpaid Amount</a>
             </div>
           </div>
           <!-- ./col -->

@@ -49,34 +49,33 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="Student-Bio.php" class="nav-link">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <p>
-                Student's Bio
-              </p>
-            </a>
-          </li>
 
           <li class="nav-item">
             <a href="MatricNumber.php" class="nav-link active bg-light">
-              <i class="fa-solid fa-graduation-cap"></i>
+            <i class="fa-solid fa-arrow-up-1-9"></i>
               <p>
                 Matric Number
               </p>
             </a>
           </li>
-          
+
+          <li class="nav-item">
+            <a href="Student.php" class="nav-link">
+            <i class="fa-solid fa-user-tie"></i>
+              <p>
+                Student
+              </p>
+            </a>
+          </li>
           
           <li class="nav-item">
             <a href="Matric-Profile.php" class="nav-link">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-id-card"></i>
               <p>
                 Profile
               </p>
             </a>
           </li>
-
 
         </ul>
       </nav>
@@ -87,8 +86,7 @@
   </aside>
  
 <!--/SideBar-->
-    
-
+ 
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -99,7 +97,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="Admission-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="Matric-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
               <li class="breadcrumb-item active">Matric Number</li>
             </ol>
           </div><!-- /.col -->
@@ -107,29 +105,43 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-        
-      
-    <div class="form-box1 text center">
-            <form id='perpetual' class='input-group-perpetual'>
-            <div class="inputBox">
-                <input type='text'class='input-field' onfocus="this.value=''" required>
-                <b>Admission Number</b>
-                <i></i>
-            </div>
-                <button type='submit'class='submit-btn' name = "submit"><b>Log in</b></button>
-            </form>
-    </div>
+    
+    <section class="content">
+    	<div class="row">
+        <!-- left column -->
+        <div class="col-sm-4">
+            <div class="box box-primary pay-box">
+              <div class="box-header with-border">
+                  <h4 class="box-title heading ml-2">Matric Number</h4>
+              </div><!-- /.box-header -->
+                <div class="box-body pay-body">
+                    <div class="form-group" id="">
+                      <form role="form" action="Generate-Matric-Number.php" method="post" id=""> 
+                          <label for="" class="heading ml-2">Admission Number</label>
+                          <input type="text" class="form-control col-11  ml-2" id="name" placeholder="Enter Admission Number" name="" namecomplete="off" required>
+                          <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                      </form> 
+                    </div>  
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+                <!--<div class="box-footer">
+                  <input type="button" class="btn" onclick="showTimeTable(this)" value = "submit">
+                </div>-->
+        </div>
+    	</div>
+	  </section>
+
 </div>
     <footer class="main-footer">
-        <strong>© <a href = "https://iaec-university.tg" class = "footer-link"> IAEC University Togo </a>|  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link" style = "">HR_Rashid Tech.</a></strong>
+        <strong>© <a href = "https://iaec-university.tg" class = "footer-link">IAEC University Togo</a> |  All rights reserved 2023 | Design & Developed By <a href="#" class = "footer-link">HR_Rashid Tech.</a></strong>
     </footer>
 </div>
-<!--JQuery-->
 
+<!--Script-->
 <?php 
   include('../includes/script.php');
   include("../includes/Webscript.php");
 ?>
- <!--JQuery-->
+ <!--/Script-->
 </body>
 </html>

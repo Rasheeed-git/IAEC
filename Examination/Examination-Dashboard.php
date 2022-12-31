@@ -7,7 +7,7 @@
   <!--for the title it will collect the login name-->
   <!--style-->
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">
     <?php 
     include('../includes/Admission-Topbar.php');
@@ -16,7 +16,7 @@
 <div class="content-wrapper">
 
 <!--SideBar-->
-<aside class="main-sidebar sidebar-dark-primary elevation-10">
+<aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
     <!-- Brand Logo -->
     <a href="https://iaec-university.tg" class="brand-link">
       <img src="../Images/iaec-logo.png" alt="IEAC-Logo" class = "logo">
@@ -31,7 +31,7 @@
         </div>
         <div class="info"> 
           <a href="#" class="d-block">Jean Hermann Mensah</a>
-          <a href="#" class="d-block"> * online</a>
+          <a href="#" class="d-block"> <b class="online"> &#x2022;</b> Online</a>
         </div>
       </div>
 
@@ -48,48 +48,78 @@
               </p>
             </a>
           </li>
-
-          <li class="nav-item">
-            <a href="Assessment.php" class="nav-link">
-            <i class="fa-solid fa-user-pen"></i>
-              <p>
-               Set Marks
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href=".php" class="nav-link">
-              <i class="fa-solid fa-book"></i></i>
-              <p>
-                Assessment Record
-              </p>
-            </a>
-          </li>
           
           <li class="nav-item">
-            <a href=".php" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="fa-solid fa-book"></i></i>
               <p>
-                Examination Record
+                Examination
               </p>
+              <i class="right fas fa-angle-left"></i>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="Set-Marks.php" class="nav-link">
+                <i class="fa-solid fa-user-pen"></i>
+                  <p>
+                  Set Marks
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                <i class="fa-solid fa-file-pen"></i>
+                  <p>Set Grade</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                <i class="fa-solid fa-file-lines"></i>
+                  <p>
+                    All Grade Info
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                <i class="fa-sharp fa-solid fa-file-contract"></i>
+                  <p>
+                    Students Mark's Sheet
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                <i class="fa-sharp fa-solid fa-file-contract"></i>
+                  <p>
+                    Course Mark's Sheet
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                <i class="fa-solid fa-file-circle-check"></i>
+                  <p>
+                    Approve Result Sheet
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                <i class="fa-solid fa-file-circle-xmark"></i>
+                  <p>
+                    Pending Mark's Sheet
+                  </p>
+                </a>
+              </li>
+            </ul>
           </li>
 
           <li class="nav-item">
             <a href="Examination-Profile.php" class="nav-link">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-id-card"></i>
               <p>
                 Profile
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="Manage-Examination-Profile.php" class="nav-link">
-            <i class="fa-solid fa-pen-to-square"></i>
-              <p>
-                Manage Profile
               </p>
             </a>
           </li>

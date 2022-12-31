@@ -61,7 +61,7 @@
           
           <li class="nav-item">
           <a href="Admission-Profile.php" class="nav-link">
-           <i class="fa-solid fa-user"> </i>
+          <i class="fa-regular fa-id-card"></i>
                <p>
                Profile
               </p>
@@ -98,31 +98,7 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
-     <!--   <div class="form-box text-center">
-            <div class="w-100">
-            <img src="../Images/iaec-university-logo.png" alt="IAEC LOGO">
-            </div>
-            <hr class = "horizontal-line">
-            <div class='button-box'>
-                <div id='btn'></div>
-                <button type='button'onclick='provisional()'class='toggle-btn'><b>Provisional</b></button>
-                <button type='button'onclick='perpetual()'class='toggle-btn'><b>Perpetual</b></button>
-            </div>
-            <div id='provisional' class='input-group-provisional'>
-                <a href = "ModeOfEntry.php" id = "provisional-btn"><b>Provisional Admission</b></a>
-            </div>
-
-            <form id='perpetual' class='input-group-perpetual'>
-            <div class="inputBox">
-                <input type='text'class='input-field' onfocus="this.value=''" required>
-                <b>Admission Number</b>
-                <i></i>
-            </div>
-                <button type='submit'class='submit-btn'><b>Log in</b></button>
-            </form>
-        </div>-->
-    
+   
 
       <section class="content">
     	  <div class="row">
@@ -152,9 +128,9 @@
                                       <label for="" class="heading">Mode Of Entry</label>
                                       <select name="EntryMode" id="EntryMode" class="form-control">
                                         <option value="" selected>Please choose an option</option>
-                                        <option class="option" value="Fresh"><a href="Fresh-Admission.php">Fresh</a></option>
+                                        <option class="option" value="Fresh"><a href="Fresh.php">Fresh</a></option>
                                         <option class="option" value="directentry">Direct Entry</option>
-                                        <option class="option" value="Transfer"><a href="Transfer-Admission.php">Transfer</a></option>
+                                        <option class="option" value="Transfer"><a href="Transfer.php">Transfer</a></option>
                                       </select>
                                     </div>
 

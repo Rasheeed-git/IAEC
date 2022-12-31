@@ -65,62 +65,56 @@
 		});
 	</script>
 	<!--/Show and Hide Password Script-->
+ <script>
+    const prevBtns = document.querySelectorAll(".btn-prev");
+    const nextBtns = document.querySelectorAll(".btn-next");
+    const progress = document.getElementById("progress");
+    const formSteps = document.querySelectorAll(".form-step");
+    const progressSteps = document.querySelectorAll(".progress-step");
 
-    <script>
-		const slidePage = document.querySelector(".slide-page");
-			const nextBtnFirst = document.querySelector(".firstNext");
-			const prevBtnSec = document.querySelector(".prev-1");
-			const nextBtnSec = document.querySelector(".next-1");
-			const prevBtnThird = document.querySelector(".prev-2");
-			const submitBtn = document.querySelector(".submit");
-			const progressText = document.querySelectorAll(".step p");
-			const progressCheck = document.querySelectorAll(".step .check");
-			const bullet = document.querySelectorAll(".step .bullet");
-			let current = 1;
+    let formStepsNum = 0;
 
-			nextBtnFirst.addEventListener("click", function(event){
-			event.preventDefault();
-			slidePage.style.marginLeft = "-25%";
-			bullet[current - 1].classList.add("active");
-			progressCheck[current - 1].classList.add("active");
-			progressText[current - 1].classList.add("active");
-			current += 1;
-			});
-			nextBtnSec.addEventListener("click", function(event){
-			event.preventDefault();
-			slidePage.style.marginLeft = "-50%";
-			bullet[current - 1].classList.add("active");
-			progressCheck[current - 1].classList.add("active");
-			progressText[current - 1].classList.add("active");
-			current += 1;
-			});
+    nextBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        formStepsNum++;
+        updateFormSteps();
+        updateProgressbar();
+    });
+    });
 
-			prevBtnSec.addEventListener("click", function(event){
-			event.preventDefault();
-			slidePage.style.marginLeft = "0%";
-			bullet[current - 2].classList.remove("active");
-			progressCheck[current - 2].classList.remove("active");
-			progressText[current - 2].classList.remove("active");
-			current -= 1;
-			});
-			prevBtnThird.addEventListener("click", function(event){
-			event.preventDefault();
-			slidePage.style.marginLeft = "-25%";
-			bullet[current - 2].classList.remove("active");
-			progressCheck[current - 2].classList.remove("active");
-			progressText[current - 2].classList.remove("active");
-			current -= 1;
-			});
-            
-			submitBtn.addEventListener("click", function(){
-			bullet[current - 1].classList.add("active");
-			progressCheck[current - 1].classList.add("active");
-			progressText[current - 1].classList.add("active");
-			current += 1;
-			});
-			
+    prevBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        formStepsNum--;
+        updateFormSteps();
+        updateProgressbar();
+    });
+    });
 
-	</script>
+    function updateFormSteps() {
+    formSteps.forEach((formStep) => {
+        formStep.classList.contains("form-step-active") &&
+        formStep.classList.remove("form-step-active");
+    });
+
+    formSteps[formStepsNum].classList.add("form-step-active");
+    }
+
+    function updateProgressbar() {
+    progressSteps.forEach((progressStep, idx) => {
+        if (idx < formStepsNum + 1) {
+        progressStep.classList.add("progress-step-active");
+        } else {
+        progressStep.classList.remove("progress-step-active");
+        }
+    });
+
+    const progressActive = document.querySelectorAll(".progress-step-active");
+
+    progress.style.width =
+        ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+    }
+   </script>
+
     
 
 	<!--Display Department script-->
@@ -195,21 +189,15 @@
             });
         });
     </script> 
-    <!--Payment Type-->
+    <!--Tuition Type-->
     <script>
-    function showDivPay(prefix,chooser){
+    function showDivType(prefix,chooser){
     var selectedOption = (chooser.options[chooser.selectedIndex].value);
     if(selectedOption == "Fresh")
     {
         var div = document.getElementById(prefix + "Fresh");
         div.style.display = 'block';
         var div = document.getElementById(prefix + "Returning");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "CO");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Hostel");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Others");
         div.style.display = 'None';
     }
     else if(selectedOption == "Returning")
@@ -218,65 +206,125 @@
         div.style.display = 'none';
         var div = document.getElementById(prefix + "Returning");
         div.style.display = 'block';
-        var div = document.getElementById(prefix + "CO");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Hostel");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Others");
-        div.style.display = 'None';
-    }
-    else if(selectedOption == "CO")
-    {
-        var div = document.getElementById(prefix + "Fresh");
-        div.style.display = 'none';
-        var div = document.getElementById(prefix + "Returning");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "CO");
-        div.style.display = 'block';
-        var div = document.getElementById(prefix + "Hostel");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Others");
-        div.style.display = 'None';
-    }
-    else if(selectedOption == "Hostel")
-    {
-        var div = document.getElementById(prefix + "Fresh");
-        div.style.display = 'none';
-        var div = document.getElementById(prefix + "Returning");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "CO");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Hostel");
-        div.style.display = 'block';
-        var div = document.getElementById(prefix + "Others");
-        div.style.display = 'None';
-		
-    }
-    else if(selectedOption == "Others")
-    {
-        var div = document.getElementById(prefix + "Fresh");
-        div.style.display = 'none';
-        var div = document.getElementById(prefix + "Returning");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "CO");
-        div.style.display = 'None';
-        var div = document.getElementById(prefix + "Hostel");
-        div.style.display = 'none';
-        var div = document.getElementById(prefix + "Others");
-        div.style.display = 'block';
-		
     }
     else{
         var div = document.getElementById(prefix + "Fresh");
         div.style.display = 'none';
         var div = document.getElementById(prefix + "Returning");
         div.style.display = 'None';
+    }
+}
+    </script>
+    <!--/Tuition Type-->
+
+     <!--Examination Insert By-->
+     <script>
+    function showDivExam(prefix,chooser){
+    var selectedOption = (chooser.options[chooser.selectedIndex].value);
+    if(selectedOption == "Student")
+    {
+        var div = document.getElementById(prefix + "Student");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Course");
+        div.style.display = 'none';
+    }
+    else if(selectedOption == "Course")
+    {
+        var div = document.getElementById(prefix + "Student");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Course");
+        div.style.display = 'block';
+    }
+    else{
+        var div = document.getElementById(prefix + "Student");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Course");
+        div.style.display = 'None';
+    }
+}
+    </script>
+    <!--/Examination Insert By-->
+
+
+    <!--Payment Type-->
+    <script>
+    function showDivPay(prefix,chooser){
+    var selectedOption = (chooser.options[chooser.selectedIndex].value);
+    if(selectedOption == "Tuition")
+    {
+        var div = document.getElementById(prefix + "Tuition");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+    }
+    else if(selectedOption == "CO")
+    {
+        var div = document.getElementById(prefix + "Tuition");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+    }
+    else if(selectedOption == "Hostel")
+    {
+        var div = document.getElementById(prefix + "Tuition");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+		
+    }
+    else if(selectedOption == "Others")
+    {
+        var div = document.getElementById(prefix + "Tuition");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "CO");
+        div.style.display = 'None';
+        var div = document.getElementById(prefix + "Hostel");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Others");
+        div.style.display = 'block';
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
+		
+    }
+    else{
+        var div = document.getElementById(prefix + "Tuition");
+        div.style.display = 'none';
         var div = document.getElementById(prefix + "CO");
         div.style.display = 'None';
         var div = document.getElementById(prefix + "Hostel");
         div.style.display = 'none';
         var div = document.getElementById(prefix + "Others");
         div.style.display = 'none';
+        var div = document.getElementById(prefix + "Fresh");
+        div.style.display = 'none';
+        var div = document.getElementById(prefix + "Returning");
+        div.style.display = 'None';
     }
 }
 	</script>
@@ -289,10 +337,10 @@
             
         console.log(val)
         if(val === 'Fresh') {
-            location = "Fresh-Admission.php";
+            location = "Fresh.php";
             }
         else if(val === 'Transfer') {
-            location = "Transfer-Admission.php";
+            location = "Transfer.php";
             }
         });
     </script>
@@ -304,19 +352,19 @@
         
     console.log(val)
     if(val === 'ND') {
-        location = "ND-Admission.php";
+        location = "ND.php";
         }
     if(val === 'NCE') {
-        location = "NCE-Admission.php";
+        location = "NCE.php";
         }
     if(val === 'AND') {
-    location = "Advance-Admission.php";
+    location = "Advance.php";
     }
     if(val === 'HND') {
-    location = "HND-Admission.php";
+    location = "HND.php";
     }
     if(val === 'BSC') {
-    location = "B.Sc-Admission.php";
+    location = "BSC.php";
     }
     });
 
@@ -344,3 +392,5 @@
      alphaOnly();
 </script>
  <!--/Accept Only Alphabet for Input-->
+
+ <!--Fresh Admission-->

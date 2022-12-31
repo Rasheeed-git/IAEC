@@ -46,13 +46,13 @@
     background-color: white;
 }
 .content2{
-    margin: 5em 0em;
-  
+    margin: 5em 0em;  
 }
 .box{
     background-color:white;
     padding: 0em 0em 0.5em;
 	border-top:0.2em solid rgb(240, 60, 115);
+	border-bottom: 0.2em solid rgb(240, 60, 115);
 	border-radius: 0.3em;
 }
 .well{
@@ -70,7 +70,6 @@ tr .table{
     z-index: 2;
 	font-size: small;
 }
-
 .col-sm-7 a:hover{
     color:rgb(240, 60, 115);
 }
@@ -128,5 +127,8 @@ tr .table{
 .receipt-logo{
 	
 	height: 10em;
-
+}
+.btn{
+	background-color: rgb(240, 60, 115);
+	color: white;
 }

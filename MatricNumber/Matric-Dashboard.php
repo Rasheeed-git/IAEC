@@ -49,28 +49,28 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="Student-Bio.php" class="nav-link">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <p>
-                Student's Bio
-              </p>
-            </a>
-          </li>
 
           <li class="nav-item">
             <a href="MatricNumber.php" class="nav-link">
-              <i class="fa-solid fa-graduation-cap"></i>
+            <i class="fa-solid fa-arrow-up-1-9"></i>
               <p>
                 Matric Number
               </p>
             </a>
           </li>
           
+          <li class="nav-item">
+            <a href="Student.php" class="nav-link">
+              <i class="fa-solid fa-user-tie"></i>
+              <p>
+                Student
+              </p>
+            </a>
+          </li>
           
           <li class="nav-item">
             <a href="Matric-Profile.php" class="nav-link">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-id-card"></i>
               <p>
                 Profile
               </p>
@@ -115,12 +115,12 @@
               <div class="inner">
                 <h3>150</h3>
 
-                <h4>Provisional Admission</h4>
+                <h4>Registered Students</h4>
               </div>
               <div class="icon">
                 <i class="fa-solid fa-users"></i>
               </div>
-              <a href="#" class="small-box-footer">Provisional</a>
+              <a href="#" class="small-box-footer">Number of Registered Students</a>
             </div>
           </div>
           <!-- ./col -->
@@ -130,12 +130,12 @@
               <div class="inner">
                 <h3>53</h3>
 
-                <h4>Perpectual Admission</h4>
+                <h4>Unregistered Students</h4>
               </div>
               <div class="icon">
                 <i class="fa-solid fa-users"></i>
               </div>
-              <a href="#" class="small-box-footer">Perpectual</a>
+              <a href="#" class="small-box-footer">Number of Unregistered Students</a>
             </div>
           </div>
           <!-- ./col -->
@@ -166,18 +166,18 @@
           
       <div class="col-sm-12 col-md-6">
             
-                  <div class="card bg-gradient-light" style="border-top:0.3em solid rgb(240, 60, 115)">
+                  <div class="card bg-gradient-light">
                       <div class="card-header border-0 ui-sortable-handle" style="cursor: move;">
 
-                        <h3 class="card-title" style="color:rgb(240, 60, 115)">
-                          <i class="far fa-calendar-alt" style="color:rgb(240, 60, 115)"></i>
+                        <h3 class="card-title">
+                          <i class="far fa-calendar-alt"></i>
                           Calendar
                         </h3>
                         <!-- tools card -->
                         <div class="card-tools">
                           <!-- button with a dropdown -->
                           <div class="btn-group">
-                            <button type="button" style="background-color:rgb(240, 60, 115)" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
+                            <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
                               <i class="fas fa-bars"></i>
                             </button>
                             <div class="dropdown-menu" role="menu">
@@ -187,7 +187,7 @@
                               <a href="#" class="dropdown-item">View calendar</a>
                             </div>
                           </div>
-                          <button type="button" style="background-color:rgb(240, 60, 115)" class="btn btn-sm" data-card-widget="collapse">
+                          <button type="button" class="btn btn-sm" data-card-widget="collapse">
                             <i class="fas fa-minus"></i>
                           </button>
                         </div>

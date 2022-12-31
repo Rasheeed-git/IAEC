@@ -61,7 +61,7 @@
           
           <li class="nav-item">
           <a href="Admission-Profile.php" class="nav-link">
-           <i class="fa-solid fa-user"> </i>
+          <i class="fa-regular fa-id-card"></i>
                <p>
                Profile
               </p>
@@ -110,9 +110,9 @@
                 <h4>Provisional Admission</h4>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <a href="#" class="small-box-footer">Provisional</a>
+              <a href="#" class="small-box-footer">Number of Provisional Admission</a>
             </div>
           </div>
           <!-- ./col -->
@@ -125,9 +125,9 @@
                 <h4>Perpectual Admission</h4>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <a href="#" class="small-box-footer">Perpectual</a>
+              <a href="#" class="small-box-footer">Number of Perpectual Admission</a>
             </div>
           </div>
           <!-- ./col -->

@@ -61,7 +61,7 @@
           
           <li class="nav-item">
           <a href="Admission-Profile.php" class="nav-link bg-light active">
-           <i class="fa-solid fa-user"> </i>
+          <i class="fa-regular fa-id-card"></i>
                <p>
                Profile
               </p>

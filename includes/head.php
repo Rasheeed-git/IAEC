@@ -2,7 +2,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Images/iaec-logo.png" type="">
-    <title>Admission-IAEC University</title>
+    <title>IAEC University</title>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -28,6 +28,9 @@
   <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"> 
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-  <link rel="stylesheet" type="text/css" href="../font/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="../bootstrap5/chosen/chosen.min.css">
+  <link rel="stylesheet" href="../bootstrap5/component-chosen/component-chosen.css">
   
   
