@@ -67,13 +67,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Set-Grade.php" class="nav-link">
                 <i class="fa-solid fa-file-pen"></i>
                   <p>Set Grade</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Grade-Info.php" class="nav-link">
                 <i class="fa-solid fa-file-lines"></i>
                   <p>
                     All Grade Info
@@ -81,7 +81,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Student-Marks-Sheet.php" class="nav-link">
                 <i class="fa-sharp fa-solid fa-file-contract"></i>
                   <p>
                     Students Mark's Sheet
@@ -89,7 +89,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Student-Result.php" class="nav-link">
+                <i class="fa-sharp fa-solid fa-file-contract"></i>
+                  <p>
+                    Students Result
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="Course-Marks-Sheet.php" class="nav-link">
                 <i class="fa-sharp fa-solid fa-file-contract"></i>
                   <p>
                     Course Mark's Sheet
@@ -97,7 +105,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Approve-Result.php" class="nav-link">
                 <i class="fa-solid fa-file-circle-check"></i>
                   <p>
                     Approve Result Sheet
@@ -105,7 +113,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Pending-Marks-Sheet.php" class="nav-link">
                 <i class="fa-solid fa-file-circle-xmark"></i>
                   <p>
                     Pending Mark's Sheet
@@ -165,7 +173,7 @@
                   	<div class="box-body mb-3">
 						        <div class="container">
                       <div class="row">
-                        <div class="col-sm-11">
+                        <div class="col-sm-12">
                           <label for="">Insert By</label>
                           <select name="" id="" class="form-control" onchange ="showDivExam('div',this);">
                             <option value="" selected>--Please Choose and option--</option>
@@ -175,10 +183,9 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-11">
+                        <div class="col-sm-12">
                             <div id ="divStudent" style="display:none">
                               <form action="Student-Marks.php">
-                                <div class="container">
                                   <div class="row">
                                     <div class="col-sm-12">
                                       <label for="">Matric Number</label>
@@ -223,17 +230,15 @@
                                     <input type="submit" value="Submit" class="btn float-right">
                                     </div>
                                   </div>
-                                </div>
                               </form>
                             </div>
 
                             <div id ="divCourse" style="display:none">
                               <form action="Course-Marks.php">
-                                <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
                                       <label for="">Course</label>
-                                      <select data-placeholder="Select a Course..." class="form-control h-25 form-control-chosen">
+                                      <select data-placeholder="Select a Course..." class="form-control form-control-chosen">
                                           <option value=""></option>
                                           <option value="html">HTML</option>
                                           <option value="css">CSS</option>
@@ -275,7 +280,6 @@
                                     <input type="submit" value="Submit" class="btn float-right">
                                     </div>
                                   </div>
-                                </div>
                               </form>
                             </div>
                         </div>
@@ -302,7 +306,6 @@
       $(document).ready(function () {
     $('.form-control-chosen').chosen({
       no_results_text: "Oops, nothing found!",
-      width: "23em",
     });
     });
     </script>

@@ -110,122 +110,154 @@
     <section class="content">
     	<div class="row">
         	<!-- left column -->
-            <div class="col-sm-4">
+            <div class="col-sm-4 mb-5">
             	<!-- general form elements -->
               	<div class="box box-primary pay-box">
                 	<div class="box-header with-border">
                   		<h3 class="box-title heading ml-2">Payment</h3>
                 	</div><!-- /.box-header -->
                   	<div class="box-body pay-body">
-                        <div class="form-group" id="">
-                          <label for="" class="heading ml-2">Fee Collection</label>
-                          <select name="" id="PayType" onchange ="showDivPay('div',this);" class="form-control col-sm-11 ml-2">
-                            <option value="" selected>Please choose an option</option>
-                            <option class="" value="Tuition">Tuition Fee</option>
-                            <option class="" value="CO">CarryOver/SpillOver Student </option>
-                            <option class="" value="Hostel">Hostel Fee</option>
-                            <option class="" value="Others">Others Fee</option>
-                          </select>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="form-group" id="">
+                              <label for="" class="heading ml-2">Fee Collection</label>
+                              <select name="" id="PayType" onchange ="showDivPay('div',this);" class="form-control col-sm-11 ml-2">
+                                <option value="" selected>Please choose an option</option>
+                                <option class="" value="Tuition">Tuition Fee</option>
+                                <option class="" value="CO">CarryOver/SpillOver Student </option>
+                                <option class="" value="Hostel">Hostel Fee</option>
+                                <option class="" value="Others">Others Fee</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-group" id="divTuition" style="display:none">
-                          <label for="" class="heading ml-2">Student Type</label>
-                          <select name="" id="" onchange ="showDivType('div',this)" class="form-control col-sm-11 ml-2">
-                            <option value="" selected>Please choose an option</option>
-                            <option class="" value="Fresh">Fresh Student</option>
-                            <option class="" value="Returning">Returning Student</option>
-                          </select>
+                        <div class="row">
+                          <div class="col-sm-12">
+                              <div class="form-group" id="divTuition" style="display:none">
+                                <label for="" class="heading ml-2">Student Type</label>
+                                <select name="" id="" onchange ="showDivType('div',this)" class="form-control col-sm-11 ml-2">
+                                  <option value="" selected>Please choose an option</option>
+                                  <option class="" value="Fresh">Fresh Student</option>
+                                  <option class="" value="Returning">Returning Student</option>
+                                </select>
+                              </div>
+                              <div class="form-group" id="divFresh" style="display:none;">
+                                  <form role="form" action="Fresh-Payment.php" method="post" id=""> 
+                                        <div class="row">
+                                          <div class="col-sm-11 ml-2">
+                                            <label for="" class="heading">Admission Number</label>
+                                            <select data-placeholder="Select  Admission Number..." class="form-control form-control-chosen">
+                                                <option value=""></option>
+                                               <option value="">82ueuhfu</option>
+                                               <option value="">82ueuhfu</option>
+                                               <option value="">82ueuhfu</option>
+                                               <option value="">82ueuhfu</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-11 ml-2">
+                                            <label for="" class="heading ">Semester</label>
+                                            <select name="" id="" class="form-control">
+                                            <option value="" selected>Please Choose an option</option>
+                                              <option value="">First Semester</option>
+                                              <option value="">Second Semester</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-11 ml-2">
+                                            <label for="" class="heading ">Payment Method</label>
+                                            <select name="" id="" class="form-control ">
+                                            <option value="" selected>Please Choose an option</option>
+                                              <option value="">POS</option>
+                                              <option value="">Transfer</option>
+                                              <option value="">Cash</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="row mt-3 ">
+                                          <div class="col-sm-11 ml-2">
+                                          <input type="submit" value="Submit" class="btn float-right">
+                                          </div>
+                                        </div>
+                                  </form> 
+                              </div>
+                              <div class="form-group" id="divReturning" style="display:none;">
+                                  <form role="form" action="Returning-Payment.php" method="post" id=""> 
+                                    <label for="" class="heading ml-2">Matric Number</label>
+                                    <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                                    <label for="" class="heading ml-2">Payment Method</label>
+                                    <select name="" id="" class="form-control col-11 ml-2">
+                                      <option value="">Please choose an option</option>
+                                      <option value="">POS</option>
+                                      <option value="">Transfer</option>
+                                      <option value="">Cash</option>
+                                    </select>
+                                    <button type="submit" class="btn Submit-btn mt-3 mr-4 float-right" id="">Submit</button>
+                                  </form> 
+                              </div>
+                              <div class="form-group" id="divCO" style="display:none;">
+                                <form role="form" action="CarryOver-Payment.php" method="post" id=""> 
+                                    <label for="" class="heading ml-2">Matric Number</label>
+                                    <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                                    <label for="" class="heading ml-2">Payment Method</label>
+                                    <select name="" id="" class="form-control col-11 ml-2">
+                                      <option value="">Please choose an option</option>
+                                      <option value="">POS</option>
+                                      <option value="">Transfer</option>
+                                      <option value="">Cash</option>
+                                    </select>
+                                    <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                                  </form> 
+                              </div>
+                              <div class="form-group" id="divHostel" style="display:none;">
+                                <form role="form" action="Hostel-Payment.php" method="post" id=""> 
+                                    <label for="" class="heading ml-2">Admission/Matric Number</label>
+                                    <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                                    <label for="" class="heading ml-2">Semester</label>
+                                    <select name="" id="" class="form-control col-11 ml-2">
+                                      <option value="">Please choose an option</option>
+                                      <option value="">First</option>
+                                      <option value="">Second</option>
+                                    </select>
+                                    <label for="" class="heading ml-2">Payment Method</label>
+                                    <select name="" id="" class="form-control col-11 ml-2">
+                                      <option value="">Please choose an option</option>
+                                      <option value="">POS</option>
+                                      <option value="">Transfer</option>
+                                      <option value="">Cash</option>
+                                    </select>
+                                    <label for="" class="heading ml-2">ROOM</label>
+                                    <select name="" id="" class="form-control col-11 ml-2">
+                                      <option value="">Please choose an option</option>
+                                      <option value="">ROOM OF 1</option>
+                                      <option value="">ROOM OF 2</option>
+                                      <option value="">ROOM OF 3</option>
+                                      <option value="">ROOM OF 4</option>
+                                    </select>
+                                    <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                                </form> 
+                              </div>
+                              <div class="form-group" id="divOthers" style="display:none;">
+                                <form role="form" action="Others-Payment.php" method="post" id="" > 
+                                    <label for="" class="heading ml-2">Matric Number</label>
+                                    <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                                    <label for="" class="heading ml-2">Payment Method</label>
+                                    <select name="" id="" class="form-control col-11 ml-2">
+                                      <option value="">Please choose an option</option>
+                                      <option value="">POS</option>
+                                      <option value="">Transfer</option>
+                                      <option value="">Cash</option>
+                                    </select>
+                                    <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                                  </form> 
+                              </div>
+                              
+                          </div>
                         </div>
-                        <div class="form-group" id="divFresh" style="display:none;">
-                            <form role="form" action="Fresh-Payment.php" method="post" id=""> 
-                              <label for="" class="heading ml-2">Admission Number</label>
-                              <input type="text" class="form-control col-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
-                              <label for="" class="heading ml-2">Semester</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">First</option>
-                                <option value="">Second</option>
-                              </select>
-                              <label for="" class="heading ml-2">Payment Method</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">POS</option>
-                                <option value="">Transfer</option>
-                                <option value="">Cash</option>
-                              </select>
-                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
-                            </form> 
-                        </div>
-                        <div class="form-group" id="divReturning" style="display:none;">
-                            <form role="form" action="Returning-Payment.php" method="post" id=""> 
-                              <label for="" class="heading ml-2">Matric Number</label>
-                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
-                              <label for="" class="heading ml-2">Payment Method</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">POS</option>
-                                <option value="">Transfer</option>
-                                <option value="">Cash</option>
-                              </select>
-                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
-                            </form> 
-                        </div>
-                        <div class="form-group" id="divCO" style="display:none;">
-                          <form role="form" action="CarryOver-Payment.php" method="post" id=""> 
-                              <label for="" class="heading ml-2">Matric Number</label>
-                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
-                              <label for="" class="heading ml-2">Payment Method</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">POS</option>
-                                <option value="">Transfer</option>
-                                <option value="">Cash</option>
-                              </select>
-                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
-                            </form> 
-                        </div>
-                        <div class="form-group" id="divHostel" style="display:none;">
-                          <form role="form" action="Hostel-Payment.php" method="post" id=""> 
-                              <label for="" class="heading ml-2">Admission/Matric Number</label>
-                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
-                              <label for="" class="heading ml-2">Semester</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">First</option>
-                                <option value="">Second</option>
-                              </select>
-                              <label for="" class="heading ml-2">Payment Method</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">POS</option>
-                                <option value="">Transfer</option>
-                                <option value="">Cash</option>
-                              </select>
-                              <label for="" class="heading ml-2">ROOM</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">ROOM OF 1</option>
-                                <option value="">ROOM OF 2</option>
-                                <option value="">ROOM OF 3</option>
-                                <option value="">ROOM OF 4</option>
-                              </select>
-                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
-                          </form> 
-                        </div>
-                        <div class="form-group" id="divOthers" style="display:none;">
-                          <form role="form" action="Others-Payment.php" method="post" id="" > 
-                              <label for="" class="heading ml-2">Matric Number</label>
-                              <input type="text" class="form-control col-sm-11 ml-2" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
-                              <label for="" class="heading ml-2">Payment Method</label>
-                              <select name="" id="" class="form-control col-11 ml-2">
-                                <option value="">Please choose an option</option>
-                                <option value="">POS</option>
-                                <option value="">Transfer</option>
-                                <option value="">Cash</option>
-                              </select>
-                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
-                            </form> 
-                        </div>
-                        
+                      </div>
                   	</div><!-- /.box-body -->
                   
             	</div><!-- /.box -->
@@ -239,7 +271,16 @@
     </footer>
 </div>
 <!--JQuery-->
-
+<script src="../bootstrap5/jquery/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+    $('.form-control-chosen').chosen({
+      no_results_text: "Oops, nothing found!",
+      width: "25em",
+    });
+    });
+    </script>
+<!--Script-->
 <?php 
   include('../includes/script.php');
   include("../includes/Webscript.php");

@@ -58,8 +58,8 @@
               <i class="right fas fa-angle-left"></i>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item active bg-light">
-                <a href="Set-Marks.php" class="nav-link">
+              <li class="nav-item ">
+                <a href="Set-Marks.php" class="nav-link bg-light active">
                 <i class="fa-solid fa-user-pen"></i>
                   <p>
                   Set Marks
@@ -67,13 +67,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link ">
+                <a href="Set-Grade.php" class="nav-link ">
                 <i class="fa-solid fa-file-pen"></i>
                   <p>Set Grade</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Grade-Info.php" class="nav-link">
                 <i class="fa-solid fa-file-lines"></i>
                   <p>
                     All Grade Info
@@ -81,7 +81,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Student-Marks-Sheet.php" class="nav-link">
                 <i class="fa-sharp fa-solid fa-file-contract"></i>
                   <p>
                     Students Mark's Sheet
@@ -89,7 +89,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Student-Result.php" class="nav-link">
+                <i class="fa-sharp fa-solid fa-file-contract"></i>
+                  <p>
+                    Students Result
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="Course-Marks-Sheet.php" class="nav-link">
                 <i class="fa-sharp fa-solid fa-file-contract"></i>
                   <p>
                     Course Mark's Sheet
@@ -97,7 +105,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Approve-Result.php" class="nav-link">
                 <i class="fa-solid fa-file-circle-check"></i>
                   <p>
                     Approve Result Sheet
@@ -105,7 +113,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="Pending-Marks-Sheet.php" class="nav-link">
                 <i class="fa-solid fa-file-circle-xmark"></i>
                   <p>
                     Pending Mark's Sheet
@@ -144,7 +152,6 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="Examination-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
             <li class="breadcrumb-item"><a href="Set-Marks.php" class = "breadcrumb-link">Set Marks</a></li>
               <li class="breadcrumb-item active">Course Marks</li>
             </ol>

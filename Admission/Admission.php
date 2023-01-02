@@ -153,10 +153,23 @@
                             <form role="form" action="../index.php" method="post" id="form1">                    
                                 <div class="box-body">
                                   <div class="form-group" id="divGrade">
-                                      <label for="">Admission Number</label>
-                                      <input type="text" class="form-control" id="name" placeholder="Enter Admission Number" name="name" autocomplete="off">
+                                      <label for="" class="heading">Admission Number</label>
+                                      <select data-placeholder="Select Admission Number..." class="form-control form-control-chosen">
+                                          <option value=""></option>
+                                          <option value="html">HTML</option>
+                                          <option value="css">CSS</option>
+                                          <option value="javascript">JavaScript</option>
+                                          <option value="python">Python</option>
+                                          <option value="html">HTML</option>
+                                          <option value="css">CSS</option>
+                                          <option value="javascript">JavaScript</option>
+                                          <option value="python">Python</option>
+                                          <option value="html">HTML</option>
+                                          <option value="css">CSS</option>
+                                          <option value="javascript">JavaScript</option>
+                                          <option value="python">Python</option>
+                                      </select>
                                   </div>
-                                      
                                 </div><!-- /.box-body -->
                                 <div class="box-footer">
                                   <input type="hidden" name="do" value="add_grade">
@@ -175,8 +188,7 @@
         </div>
       </section>
 
-         <!--Fresh Admission-->
-         <!--/Fresh Admission-->
+   
 
 </div>
     <footer class="main-footer">
@@ -185,6 +197,15 @@
 </div>
 <!--JQuery-->
 
+<script src="../bootstrap5/jquery/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+    $('.form-control-chosen').chosen({
+      no_results_text: "Oops, nothing found!",
+    });
+    });
+    </script>
+<!--Script-->
 
 
 <?php 

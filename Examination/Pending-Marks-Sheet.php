@@ -13,7 +13,7 @@
     include('../includes/Admission-Topbar.php');
     ?>
 
-<div class="content-wrapper">
+<div class="content-wrapper ">
 
 <!--SideBar-->
 <aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
@@ -50,7 +50,7 @@
           </li>
           
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link ">
+            <a href="#" class="nav-link">
               <i class="fa-solid fa-book"></i></i>
               <p>
                 Examination
@@ -59,7 +59,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="Set-Marks.php" class="nav-link bg-light active">
+                <a href="Set-Marks.php" class="nav-link ">
                 <i class="fa-solid fa-user-pen"></i>
                   <p>
                   Set Marks
@@ -113,7 +113,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="Pending-Marks-Sheet.php" class="nav-link">
+                <a href="Pending-Marks-Sheet.php" class="nav-link bg-light active">
                 <i class="fa-solid fa-file-circle-xmark"></i>
                   <p>
                     Pending Mark's Sheet
@@ -152,8 +152,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="Set-Marks.php" class = "breadcrumb-link">Set-Marks</a></li>
-              <li class="breadcrumb-item active">Student-Marks</li>
+            <li class="breadcrumb-item"><a href="Examination-Dashboard.php" class = "breadcrumb-link">Dashboard</a></li>
+              <li class="breadcrumb-item active">Pending-Marks-Sheet</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -162,86 +162,50 @@
     <!-- /.content-header -->
 
     <section class="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Insert Student's Marks</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th style="width: 50px">#</th>
-                      <th style="width: 150px">Course Code</th>
-                      <th>Course Title</th>
-                      <th style="width: 105px">Credit Unit</th>
-                      <th style="width: 100px">C.A <small>30%</small></th>
-                      <th style="width: 100px">Exams <small>70%</small></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-                    <tr>
-                      <td>5.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-            
-              
-
+    	<div class="row">
+        	<!-- left column -->
+            <div class="col-sm-4">
+            	<!-- general form elements -->
+              	<div class="box box-primary mb-5">
+                	<div class="box-header with-border">
+                  		<h3 class="box-title ml-3">Pending Sheet</h3>
+                        <hr />
+                	</div><!-- /.box-header -->
+                  	<div class="box-body">
+                        <form action="Pending-Sheet.php">
+                            <div class="container">
+                                <div class="row ml-1">
+                                    <div class="col-sm-11">
+                                    <label for="">Semester</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="" selected>--Please Choose and option--</option>
+                                        <option value="">Fall</option>
+                                        <option value="">Spring</option>
+                                        <option value="">Summer</option>
+                                    </select>
+                                    <label for="">Session</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="" selected>--Please Choose and option--</option>
+                                        <option value="">2021-2022</option>
+                                        <option value="">2022-2023</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row ml-1">
+                                    <div class="col-sm-11">
+                                    <input type="submit" value="Submit" class="btn float-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                  	</div><!-- /.box-body -->
                     
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-              <div class="panel-footer1 text-right mr-3 mb-3">
-                 <input type="button" class="btn " name="Update" value="Submit" id="">
-              </div>
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
+            	</div><!-- /.box -->
+        	</div>
+    	</div>
+	</section>
+
 
      	
 
@@ -256,7 +220,6 @@
       $(document).ready(function () {
     $('.form-control-chosen').chosen({
       no_results_text: "Oops, nothing found!",
-      width: "23em",
     });
     });
     </script>

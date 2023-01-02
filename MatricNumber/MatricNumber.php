@@ -117,9 +117,22 @@
                 <div class="box-body pay-body">
                     <div class="form-group" id="">
                       <form role="form" action="Generate-Matric-Number.php" method="post" id=""> 
-                          <label for="" class="heading ml-2">Admission Number</label>
-                          <input type="text" class="form-control col-11  ml-2" id="name" placeholder="Enter Admission Number" name="" namecomplete="off" required>
-                          <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <label for="" class="heading ml-2">Admission Number</label>
+                              <select name="" id=""  class="form-control form-control-chosen col-11  ml-2" data-placeholder="Please select...">
+                                <option value=""></option>
+                                <option value="">ref-adm/002993/2939</option>
+                                <option value="">ref-adm/73839/3292</option>
+                                <option value="">ref-adm/030033/34902</option>
+                                <option value="">ref-adm/373902/3894</option>
+                                <option value="">ref-adm/480323/2099</option>
+                              </select>
+                              <button type="submit" class="btn Submit-btn mt-2 ml-2" id="">Submit</button>
+                            </div>
+                          </div>
+                        </div>
                       </form> 
                     </div>  
                 </div><!-- /.box-body -->
@@ -137,6 +150,15 @@
     </footer>
 </div>
 
+
+<script src="../bootstrap5/jquery/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+    $('.form-control-chosen').chosen({
+      no_results_text: "Oops, nothing found!",
+    });
+    });
+    </script>
 <!--Script-->
 <?php 
   include('../includes/script.php');

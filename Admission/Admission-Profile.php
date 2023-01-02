@@ -120,7 +120,7 @@
             <b class="ml-2">Contact:</b> <a class="float-right mr-2">09039083938</a>
           </li>
           <li class="list-group-item">
-            <b class="ml-2">DOB:</b> <a class="float-right mr-2">1998</a>
+            <b class="ml-2">Gender</b> <a class="float-right mr-2">Male</a>
           </li>
         </ul>
         <button class="btn  btn-block" id="changeprofile" onclick="document.getElementById('profilepicture').click()">Change Profile Picture</button>

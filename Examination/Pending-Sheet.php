@@ -13,7 +13,7 @@
     include('../includes/Admission-Topbar.php');
     ?>
 
-<div class="content-wrapper">
+<div class="content-wrapper ">
 
 <!--SideBar-->
 <aside class="main-sidebar sidebar-dark-primary bg-dark elevation-10">
@@ -50,7 +50,7 @@
           </li>
           
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link ">
+            <a href="#" class="nav-link">
               <i class="fa-solid fa-book"></i></i>
               <p>
                 Examination
@@ -59,7 +59,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="Set-Marks.php" class="nav-link bg-light active">
+                <a href="Set-Marks.php" class="nav-link ">
                 <i class="fa-solid fa-user-pen"></i>
                   <p>
                   Set Marks
@@ -97,7 +97,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="Course-Marks-Sheet.php" class="nav-link">
+                <a href="Course-Marks-Sheet.php" class="nav-link ">
                 <i class="fa-sharp fa-solid fa-file-contract"></i>
                   <p>
                     Course Mark's Sheet
@@ -113,7 +113,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="Pending-Marks-Sheet.php" class="nav-link">
+                <a href="Pending-Marks-Sheet.php" class="nav-link bg-light active">
                 <i class="fa-solid fa-file-circle-xmark"></i>
                   <p>
                     Pending Mark's Sheet
@@ -152,8 +152,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="Set-Marks.php" class = "breadcrumb-link">Set-Marks</a></li>
-              <li class="breadcrumb-item active">Student-Marks</li>
+            <li class="breadcrumb-item"><a href="Pending-Marks-Sheet.php" class = "breadcrumb-link">Pending-Marks-Sheet</a></li>
+              <li class="breadcrumb-item active">Pending-Sheet</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -163,77 +163,111 @@
 
     <section class="content">
       <div class="container">
+        
         <div class="row">
           <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Insert Student's Marks</h3>
+                <div class="row">
+                <div class="col-sm-2">
+                <div class="dataTables_length" id="example1_length">
+                <label>Show entries</label>
+                  <select name="example1_length" aria-controls="example1" class="form-control">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select> 
+              </div>
+                </div>
+                <div class="col-sm-8 text-center">
+                <h3 class="card-title w-100">Pending Course Mark's Sheet</h3>
+                <h3>All Pending Course Marks for Student</h3>
+                </div>
+                <div class="col-sm-2">
+                <div class="card-tools">
+                <label>Search</label>
+                  <div class="input-group " style="width:11em;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search by Matric No.">
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+               
+            
+
+
+            
+
+
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
-                      <th style="width: 50px">#</th>
-                      <th style="width: 150px">Course Code</th>
-                      <th>Course Title</th>
-                      <th style="width: 105px">Credit Unit</th>
-                      <th style="width: 100px">C.A <small>30%</small></th>
-                      <th style="width: 100px">Exams <small>70%</small></th>
+                      <th style="width: 50px">S/N</th>
+                      <th style="width: 150px">Matric No.</th>
+                      <th>Name</th>
+                      <th>Course</th>
+                      <th style="width: 70px">C.A</th>
+                      <th Style="width: 70px">Exams</th>
+                      <th style="width: 130px">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>1.</td>
-                      <td>CSC440</td>
+                      <td>1</td>
+                      <td>0086CSC2122</td>
+                      <td>Haruna Rasheed</td>
                       <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
+                      <td>25</td>
+                      <td>65</td>
+                      <td> 
+                        <a href="#" style="display:inline-block;background-color:grey;color:white" class="btn"><small><i class="fa-solid fa-pen-to-square"></i></small>Set Marks</a>
+                      </td>
                     </tr>
                     <tr>
-                      <td>2.</td>
-                      <td>CSC440</td>
+                      <td>1</td>
+                      <td>0086CSC2122</td>
+                      <td>Haruna Rasheed</td>
                       <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
+                      <td>25</td>
+                      <td>65</td>
+                      <td> 
+                        <a href="#" style="display:inline-block;background-color:grey;color:white" class="btn"><small><i class="fa-solid fa-pen-to-square"></i></small>Set Marks</a>
+                      </td>
                     </tr>
                     <tr>
-                      <td>3.</td>
-                      <td>CSC440</td>
+                      <td>1</td>
+                      <td>0086CSC2122</td>
+                      <td>Haruna Rasheed</td>
                       <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
+                      <td>25</td>
+                      <td>65</td>
+                      <td> 
+                        <a href="#" style="display:inline-block;background-color:grey;color:white" class="btn"><small><i class="fa-solid fa-pen-to-square"></i></small>Set Marks</a>
+                      </td>
                     </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-                    <tr>
-                      <td>5.</td>
-                      <td>CSC440</td>
-                      <td>Computer Programming</td>
-                      <td>3</td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                      <td><input type="text" name="" id="" style="width:100%" maxlength="5" ></td>
-                    </tr>
-            
-              
-
-                    
+                  
                   </tbody>
                 </table>
               </div>
-              <!-- /.card-body -->
-              <div class="panel-footer1 text-right mr-3 mb-3">
-                 <input type="button" class="btn " name="Update" value="Submit" id="">
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">«</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">»</a></li>
+                </ul>
               </div>
+              <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </div>

@@ -19,18 +19,18 @@
 }
 /*profile*/
 .panel-heading{
-    border-top: 5px solid rgb(240, 60, 115);
+    border-top: 3px solid rgb(240, 60, 115);
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 .panel{
     background-color: white;
 }
 .footer{
-    border-bottom: 5px solid rgb(240, 60, 115);
+    border-bottom: 3px solid rgb(240, 60, 115);
     
 }
 .panel-footer{
-    border-bottom: 5px solid rgb(240, 60, 115);
+    border-bottom: 3px solid rgb(240, 60, 115);
 }
 
 .content2{
@@ -38,8 +38,8 @@
   
 }
 .card{
-    border-top:5px solid rgb(240,60,115);
-    border-bottom: 5px solid rgb(240, 60, 115);
+    border-top:3px solid rgb(240,60,115);
+    border-bottom: 3px solid rgb(240, 60, 115);
 }
 
 /*CSS*/

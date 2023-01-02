@@ -30,7 +30,6 @@
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
   <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" href="../bootstrap5/chosen/chosen.min.css">
-  <link rel="stylesheet" href="../bootstrap5/component-chosen/component-chosen.css">
+  <link href="../bootstrap5/component-chosen/css/component-chosen.min.css" rel="stylesheet">
   
   
